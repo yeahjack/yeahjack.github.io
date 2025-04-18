@@ -1,18 +1,34 @@
 ---
 permalink: /
-title: "Homepage"
-excerpt: "About me"
+title: "👨‍💻 About Me"
+excerpt: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Hi! This is Yijie Xu, currently a first-year Ph.D. student in Artificial Intelligence at [HKUST(GZ) (The Hong Kong University of Science and Technology, Guangzhou)](https://hkust-gz.edu.cn/), proudly supervised by [Prof. Hui Xiong (Fellow of IEEE, AAAS, AAAI and CAAI)](https://scholar.google.com/citations?user=cVDF1tkAAAAJ) and [Prof. Xuming Hu](https://xuminghu.github.io/). Before that, he obtained the M.Phil. degree in Artificial Intelligence from HKUST(GZ).
+<div style="
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  background-color: #f9f9fb;
+  margin-bottom: 1.2em;
+  font-size: 16px;
+  line-height: 1.7;
+">
+  <p>
+  Hi! This is Yijie Xu, currently a first-year Ph.D. student in Artificial Intelligence at 
+  <a href="https://hkust-gz.edu.cn/">HKUST(GZ)</a>, proudly supervised by 
+  <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ"><strong>Prof. Hui Xiong</strong></a> 
+  (Fellow of AAAI, CAAI, AAAS and IEEE). Besides, he also works closely with 
+  <a href="https://xuminghu.github.io/">Prof. Xuming Hu</a>.
+</p>
+  <p>His current research interest includes <strong>Data Mining</strong>, <strong>Natural Language Processing</strong> and <strong>Large Language Models</strong>. Besides, he also had research experience in Human-AI Interaction and Computational Social Science.</p>
+</div>
 
-His current research interest includes **Data Mining**, **Natural Language Processing** and **Large Language Models**. Besides, he also had research experience in Human-AI Interaction and Computational Social Science.
-
-## News
+# 📢 News
 [Mar. 2025] Invited as a **Reviewer** for [**KDD**](https://kdd2025.kdd.org/) 2025 Datasets and Benchmarks Track February and [**ACM MM**](https://acmmm2025.org/)!
 
 [Mar. 2025] One paper about [**LLM Watermarking**](https://openreview.net/forum?id=JGTRj6h0Cv) has been accepted by [**WMARK@ICLR2025**](https://sites.google.com/view/genai-watermark/home)!
@@ -42,7 +58,7 @@ His current research interest includes **Data Mining**, **Natural Language Proce
 [Sep. 2023] Get the **Champion** of the _Human-Computer Interaction channel_, the 2nd Guangzhou Pazhou Algorithm Competition. (**Top 15/3307 Teams**)
 
 
-<!-- 在Markdown文件中嵌入HTML和CSS -->
+<!-- 在Markdown文件中嵌入HTML和CSS
 <div style="width: 300px; height: 200px; margin-top: 20px; position: absolute;">
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=NpnY3edFDF62VlpDmOXGJNtt09K-nsVqCuRa-IA5iTI&cl=ffffff&w=a"></script>
-</div>
+</div> -->
