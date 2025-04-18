@@ -399,3 +399,33 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+.intro-box {
+  background-color: var(--intro-bg-color);
+  color: var(--intro-text-color);
+  border: 1px solid var(--intro-border-color);
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  margin-bottom: 1.2em;
+  font-size: 16px;
+  line-height: 1.7;
+
+  a {
+    color: var(--intro-link-color);
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}
+
+.news-date {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--global-text-color-light);
+  margin-right: 0.25em;   // 缩短间距
+  min-width: 5.5em;       // 保持对齐宽度
+}

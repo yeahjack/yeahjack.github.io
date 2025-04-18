@@ -44,4 +44,8 @@ $sidebar-screen-min-width   : 1024px;
     --global-text-color                 : #{$dark-gray};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$lighter-gray};
+    --intro-bg-color: #f9f9fb;
+    --intro-text-color: var(--global-text-color);
+    --intro-border-color: #e0e0e0;
+    --intro-link-color: var(--global-link-color);
 }
