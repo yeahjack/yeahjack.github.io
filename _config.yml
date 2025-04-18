@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Yijie Xu"
   avatar           : "profile.png"
-  bio              : "Ph.D. student in Artificial Intelligence @ HKUST(GZ)"
+  bio              : "Ph.D. student in AI"
   location         : "Guangzhou, China"
-  employer         :
+  employer         : "HKUST"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=hBZs76kAAAAJ"
   email            : "yxu409@connect.hkust-gz.edu.cn"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "Jack_YijieXu"
+  twitter          : 
   vine             :
   weibo            : 
   xing             :

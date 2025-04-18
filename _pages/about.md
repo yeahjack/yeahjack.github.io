@@ -10,7 +10,7 @@ redirect_from:
 
 <div class="intro-box">
   <p>
-    Hi! This is Yijie Xu, currently a first-year Ph.D. student in Artificial Intelligence at 
+    Hi! This is <strong>Yijie Xu</strong>, currently a first-year Ph.D. student in Artificial Intelligence at 
     <a href="https://hkust-gz.edu.cn/">The Hong Kong University of Science and Technology, Guangzhou</a>, proudly supervised by 
     <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ"><strong>Prof. Hui Xiong</strong></a> 
     (Fellow of AAAI, CAAI, AAAS and IEEE). Besides, he also works closely with 
@@ -35,7 +35,7 @@ redirect_from:
 
 <span class="news-date">Dec. 2024</span> Invited as a **Reviewer** for [**ICML**](https://icml.cc/Conferences/2025/) 2025, [**IJCAI**](https://2025.ijcai.org/) 2025 (Survey Track), and [**IJCNN**](https://2025.ijcnn.org/) 2025!  
 
-<span class="news-date">Sep. 2024</span> Our paper about [**sEMG Gesture Recognition**](https://arxiv.org/abs/2405.14398) has been accepted by **NeurIPS 2024**!  
+<span class="news-date">Sep. 2024</span> One paper about [**sEMG Gesture Recognition**](https://arxiv.org/abs/2405.14398) has been accepted by **NeurIPS 2024**!  
 
 <span class="news-date">Sep. 2024</span> I am honored to get the **First Prize** in the _Smart Audiovisual Track_, the [National Artificial Intelligence Application Innovation Challenge](https://www.cicas.cn/).  
 

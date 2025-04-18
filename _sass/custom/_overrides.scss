@@ -1,0 +1,59 @@
+/* =======================================================
+   Align #theme-toggle with the right edge of the content
+   ======================================================= */
+
+#site-nav {
+    position: relative;
+}
+
+/* Reference point for absolute positioning */
+
+$toggle-size: 2.5rem;
+/* Width of the sun/hamburger button itself */
+
+/* ---- General styles ---- */
+#site-nav #theme-toggle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    /* Stick to the right edge of the container on small screens */
+    margin: 0;
+
+    a {
+        /* Expand clickable area */
+        width: $toggle-size;
+        height: $toggle-size;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+/* ---- When navigation overflows and the hamburger button appears (.has-hidden-links) ---- */
+.greedy-nav.has-hidden-links #theme-toggle {
+    right: $toggle-size;
+}
+
+/* === ≥ $large (1024px): Main content shifts left by 200px, so the button also shifts left === */
+@media (min-width: #{$large}) {
+    #site-nav #theme-toggle {
+        right: $right-sidebar-width-narrow;
+    }
+
+    .greedy-nav.has-hidden-links #theme-toggle {
+        right: calc(#{$right-sidebar-width-narrow} + #{$toggle-size});
+    }
+}
+
+/* === ≥ $x-large (1280px): Main content shifts further left to 300px === */
+@media (min-width: #{$x-large}) {
+    #site-nav #theme-toggle {
+        right: $right-sidebar-width;
+    }
+
+    .greedy-nav.has-hidden-links #theme-toggle {
+        right: calc(#{$right-sidebar-width} + #{$toggle-size});
+    }
+}
