@@ -1,8 +1,15 @@
 services:
   jekyll-site:
     image: jekyll-site
-    build: .
-    volumes: [.:/usr/src/app]
-    ports: [4000:4000]
-    user: 1000:1000
-    environment: [JEKYLL_ENV=docker]
+    build:
+      context: .
+      args:
+        HTTP_PROXY: http://10.7.0.38:10808
+        HTTPS_PROXY: http://10.7.0.38:10808
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 4000:4000
+    user: 1002:1002
+    environment:
+      - JEKYLL_ENV=docker
