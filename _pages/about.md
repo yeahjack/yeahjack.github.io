@@ -22,6 +22,7 @@ redirect_from:
 </div>
 
 # 📢 News
+<span class="news-date">May. 2025</span> Invited as a **Reviewer** for [**IEEE TCSVT**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)!
 
 <span class="news-date">Mar. 2025</span> Invited as a **Reviewer** for [**KDD**](https://kdd2025.kdd.org/) 2025 Datasets and Benchmarks Track February and [**ACM MM**](https://acmmm2025.org/)!  
 
