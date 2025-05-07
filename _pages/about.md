@@ -22,7 +22,7 @@ redirect_from:
 </div>
 
 # 📢 News
-<span class="news-date">May. 2025</span> One paper about [**sEMG short-term feature enhancement**] has been accepted by [**ICML 2025**](https://icml.cc/)!
+<span class="news-date">May. 2025</span> One paper about [**sEMG short-term feature enhancement**](https://openreview.net/forum?id=C0xvseVIPU) has been accepted by [**ICML 2025**](https://icml.cc/)!
 
 <span class="news-date">May. 2025</span> Invited as a **Reviewer** for [**IEEE TCSVT**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)!
 
