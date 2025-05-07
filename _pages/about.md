@@ -22,6 +22,8 @@ redirect_from:
 </div>
 
 # 📢 News
+<span class="news-date">May. 2025</span> One paper about [**sEMG short-term feature enhancement**] has been accepted by [**ICML 2025**](https://icml.cc/)!
+
 <span class="news-date">May. 2025</span> Invited as a **Reviewer** for [**IEEE TCSVT**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)!
 
 <span class="news-date">Mar. 2025</span> Invited as a **Reviewer** for [**KDD**](https://kdd2025.kdd.org/) 2025 Datasets and Benchmarks Track February and [**ACM MM**](https://acmmm2025.org/)!  
@@ -50,4 +52,4 @@ redirect_from:
 
 <span class="news-date">Feb. 2024</span> Will stay in HKUST Guangzhou for my Ph.D. study! Thanks to Prof. Hui Xiong and Prof. Xuming Hu for their support!  
 
-<span class="news-date">Sep. 2023</span> Get the **Champion** of the _Human-Computer Interaction channel_, the 2nd Guangzhou Pazhou Algorithm Competition. (**Top 15/3307 Teams**)  
+<span class="news-date">Sep. 2023</span> Get the **Champion** of the _Human-Computer Interaction channel_, the 2nd Guangzhou Pazhou Algorithm Competition. (**Top 15/3307 Teams**)
