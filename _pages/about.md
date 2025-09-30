@@ -22,6 +22,16 @@ redirect_from:
 </div>
 
 # 📢 News
+<span class="news-date">Sep. 2025</span> Two papers about 
+[**Key Frame Search for Long Video Understanding**](https://arxiv.org/abs/2503.13139) 
+and 
+[**Spatial Prompting for VLMs**](https://arxiv.org/abs/2509.16087) 
+have been accepted by [**NeurIPS 2025**](https://neurips.cc/)!  
+
+<span class="news-date">Sep. 2025</span> Invited as a **Reviewer** for [**ICLR 2026**](https://iclr.cc/)!  
+
+<span class="news-date">Aug. 2025</span> Invited as a **Reviewer** for [**AAAI 2026**](https://aaai.org/conference/aaai/aaai-26/)!
+
 <span class="news-date">May. 2025</span> One paper about [**sEMG short-term enhancement**](https://openreview.net/forum?id=C0xvseVIPU) has been accepted by [**ICML 2025**](https://icml.cc/)!
 
 <span class="news-date">May. 2025</span> Invited as a **Reviewer** for [**IEEE TCSVT**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)!
