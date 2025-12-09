@@ -22,6 +22,11 @@ redirect_from:
 </div>
 
 # 📢 News
+<span class="news-date">Nov. 2025</span> One paper about 
+<a href="https://arxiv.org/abs/2511.07301"><strong>Source-free Domain Adaptation</strong></a> 
+has been accepted by 
+<a href="https://aaai.org/conference/aaai/aaai-26/"><strong>AAAI</strong></a>!
+
 <span class="news-date">Sep. 2025</span> Two papers about 
 [**Key Frame Search for Long Video Understanding**](https://arxiv.org/abs/2503.13139) 
 and 
