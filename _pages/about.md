@@ -13,7 +13,7 @@ redirect_from:
     Hi! This is <strong>Yijie Xu</strong>, currently a first-year Ph.D. student in Artificial Intelligence at 
     <a href="https://hkust-gz.edu.cn/">The Hong Kong University of Science and Technology, Guangzhou</a>, proudly supervised by 
     <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ"><strong>Prof. Hui Xiong</strong></a> 
-    (Fellow of AAAI, CAAI, AAAS and IEEE). Besides, he also works closely with 
+    (Fellow of CAAI, CCF, IEEE, AAAI and AAAS). Besides, he also works closely with 
     <a href="https://xuminghu.github.io/">Prof. Xuming Hu</a>.
   </p>
   <p>
@@ -22,6 +22,11 @@ redirect_from:
 </div>
 
 # 📢 News
+
+<span class="news-date">Dec. 2025</span> Congratulations to my supervisor Prof. Hui Xiong for being elected as a <strong>CCF Fellow</strong>!
+
+<span class="news-date">Dec. 2025</span> Invited as a **Reviewer** for [**CVPR 2026**](https://cvpr.thecvf.com/)!
+
 <span class="news-date">Nov. 2025</span> One paper about 
 <a href="https://arxiv.org/abs/2511.07301"><strong>Source-free Domain Adaptation</strong></a> 
 has been accepted by 
