@@ -25,7 +25,7 @@ redirect_from:
 
 <span class="news-date">Dec. 2025</span> Congratulations to my supervisor Prof. Hui Xiong for being elected as a <strong>CCF Fellow</strong>!
 
-<span class="news-date">Dec. 2025</span> Invited as a **Reviewer** for [**CVPR 2026**](https://cvpr.thecvf.com/)!
+<span class="news-date">Dec. 2025</span> Invited as a **Reviewer** for [**CVPR 2026**](https://cvpr.thecvf.com/) and [**ICML 2026**](https://icml.cc/)!
 
 <span class="news-date">Nov. 2025</span> One paper about 
 <a href="https://arxiv.org/abs/2511.07301"><strong>Source-free Domain Adaptation</strong></a> 
