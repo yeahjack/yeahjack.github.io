@@ -22,6 +22,8 @@ redirect_from:
 </div>
 
 # 📢 News
+<span class="news-date">Mar. 2026</span> Invited as a **Reviewer** for [**ACM Computing Surveys**](https://dl.acm.org/journal/csur)!
+
 <span class="news-date">Jan. 2026</span> Invited as a **Reviewer** for [**COLM 2026**](https://colmweb.org/)!
 
 <span class="news-date">Dec. 2025</span> Congratulations to my supervisor Prof. Hui Xiong for being elected as a <strong>CCF Fellow</strong>!
