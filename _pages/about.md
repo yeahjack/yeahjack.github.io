@@ -24,6 +24,8 @@ redirect_from:
 # 📢 News
 <span class="news-date">Mar. 2026</span> Invited as a **Reviewer** for [**ACM Computing Surveys**](https://dl.acm.org/journal/csur)!
 
+<span class="news-date">Feb. 2026</span> One paper about <strong>VLM Unlearning</strong> has been accepted by [**CVPR 2026**](https://cvpr.thecvf.com/)!
+
 <span class="news-date">Feb. 2026</span> Invited as a **Reviewer** for [**ACM MM**](https://2026.acmmm.org/)!
 
 <span class="news-date">Jan. 2026</span> Invited as a **Reviewer** for [**COLM 2026**](https://colmweb.org/)!
