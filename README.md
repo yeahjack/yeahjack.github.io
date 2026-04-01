@@ -50,6 +50,18 @@ When you are initially working on your website, it is very useful to be able to 
 1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
     You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
 
+### Local Preview Shortcut
+
+This repository includes a local helper script that pins the project to Ruby `3.2.9` and patches macOS C++ build settings needed by native gems such as `eventmachine`.
+
+```bash
+./scripts/jekyll-local.sh install
+./scripts/jekyll-local.sh build
+./scripts/jekyll-local.sh serve
+```
+
+The script serves the site at `http://localhost:4000/`.
+
 If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
 
 ## Using Docker
