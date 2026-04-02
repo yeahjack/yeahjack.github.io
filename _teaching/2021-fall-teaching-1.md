@@ -1,22 +1,12 @@
 ---
-title: "Teaching Assistant"
+title: "Professional Skills for Mathematicians"
 collection: teaching
-type: "Undergraduate course"
 permalink: /teaching/2021-fall-teaching-1
-venue: "Nanjing University of Information Science and Technology"
+venue: "NUIST & Reading"
 date: 2021-09-01
 location: "Nanjing, China"
+role: "Teaching Assistant"
+term: "Fall 2021"
 ---
 
-Teaching Assistant of Professional Skills for Mathematicians by Dr. Raul Sanchez at Reading Academy, Nanjing University of Information Science and Technology.
-
-Helped students with their coursework and the lecturer with assigning homework.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Teaching Assistant for **Professional Skills for Mathematicians**.

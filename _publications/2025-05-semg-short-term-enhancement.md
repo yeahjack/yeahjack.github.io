@@ -7,4 +7,4 @@ date: 2025-05-01
 paperurl: 'https://openreview.net/forum?id=C0xvseVIPU'
 venue: 'ICML 2025'
 ---
-Accepted by ICML 2025.
+Weiyu Guo, Ziyue Qiao, Ying Sun, Yijie Xu, Hui Xiong.

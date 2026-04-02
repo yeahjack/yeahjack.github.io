@@ -4,6 +4,12 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PATCH_FILE="$ROOT_DIR/scripts/rbconfig_cxx_patch.rb"
+LOCAL_CONFIG_FILE="${LOCAL_CONFIG_FILE:-$ROOT_DIR/_config_docker.yml}"
+JEKYLL_CONFIG_ARGS=(--config "$ROOT_DIR/_config.yml")
+
+if [[ -f "$LOCAL_CONFIG_FILE" ]]; then
+  JEKYLL_CONFIG_ARGS=(--config "$ROOT_DIR/_config.yml,$LOCAL_CONFIG_FILE")
+fi
 
 export RBENV_VERSION="${RBENV_VERSION:-3.2.9}"
 export BUNDLE_PATH="${BUNDLE_PATH:-$ROOT_DIR/vendor/bundle}"
@@ -27,11 +33,11 @@ case "$ACTION" in
     ;;
   build)
     run_bundle_install
-    bundle exec jekyll build
+    bundle exec jekyll build "${JEKYLL_CONFIG_ARGS[@]}"
     ;;
   serve)
     run_bundle_install
-    bundle exec jekyll serve -l -H localhost
+    bundle exec jekyll serve "${JEKYLL_CONFIG_ARGS[@]}" -l -H localhost
     ;;
   *)
     echo "Usage: $0 [install|build|serve]" >&2

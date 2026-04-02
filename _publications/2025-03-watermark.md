@@ -7,4 +7,4 @@ date: 2025-03-08
 paperurl: 'https://openreview.net/forum?id=JGTRj6h0Cv'
 venue: 'WMARK@ICLR2025'
 ---
-Accepted by The 1st Workshop on GenAI Watermarking, ICLR 2025.
+Yijie Xu, Aiwei Liu, Xuming Hu, Lijie Wen, Hui Xiong.

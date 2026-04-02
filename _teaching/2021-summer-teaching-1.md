@@ -1,22 +1,12 @@
 ---
-title: "Teaching Assistant"
+title: "Mathematical Programming"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2021-summer-teaching-1
-venue: "Nanjing University of Information Science and Technology"
-date: 2021-02-01
+permalink: /teaching/2021-spring-teaching-1
+venue: "NUIST & Reading"
+date: 2021-03-01
 location: "Nanjing, China"
+role: "Teaching Assistant"
+term: "Spring 2021"
 ---
 
-Teaching Assistant of Mathematical Programming by Dr. Raul Sanchez at Reading Academy, Nanjing University of Information Science and Technology.
-
-Helped students with their coursework and the lecturer with assigning homework.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Teaching Assistant for **Mathematical Programming**.

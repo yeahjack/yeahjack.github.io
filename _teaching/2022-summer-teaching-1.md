@@ -1,20 +1,12 @@
 ---
-title: "Teaching Assistant"
+title: "Red Bird Challenge Camp"
 collection: teaching
-type: "Summer Camp"
 permalink: /teaching/2022-summer-teaching-1
-venue: "HKUST Guangzhou"
+venue: "HKUST(GZ)"
 date: 2022-07-01
 location: "Guangzhou, China"
+role: "Teaching Assistant"
+term: "Summer 2022"
 ---
 
-Teaching Assistant of the Red Bird Challenge Camp at HKUST Guangzhou.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Teaching Assistant for **Red Bird Challenge Camp**.
