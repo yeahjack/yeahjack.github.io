@@ -17,7 +17,7 @@ redirect_from:
     <a href="https://xuminghu.github.io/">Prof. Xuming Hu</a>.
   </p>
   <p>
-    His current research interest includes <strong>Data Mining</strong>, <strong>Natural Language Processing</strong> and <strong>Large Language Models</strong>. Besides, he also had research experience in Human-AI Interaction and Computational Social Science.
+    His current research interests broadly lie in <strong>Natural Language Processing</strong> and <strong>Data Mining</strong>, with a particular focus on <strong>Test-time/Self-Evolving Language Models</strong> and <strong>Retrieval-Augmented Generation (RAG)</strong>; he also studies how humans and AI collaborate and interact.
   </p>
 </div>
 
