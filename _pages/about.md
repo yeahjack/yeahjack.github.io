@@ -256,7 +256,7 @@ redirect_from:
 
   .academic-pub {
     display: grid;
-    grid-template-columns: minmax(180px, 205px) minmax(0, 1fr);
+    grid-template-columns: minmax(172px, 184px) minmax(0, 1fr);
     gap: clamp(1rem, 2vw, 1.35rem);
     padding: 0.92rem 0;
     border-bottom: 1px solid var(--academic-rule);
@@ -277,7 +277,7 @@ redirect_from:
   .academic-pub__figure {
     position: relative;
     align-self: start;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1.9 / 1;
     overflow: hidden;
     border: 1px solid var(--academic-rule);
     border-radius: 3px;
@@ -306,7 +306,7 @@ redirect_from:
       z-index: 10;
       border-color: rgba(32, 95, 131, 0.42);
       box-shadow: 0 16px 38px rgba(35, 44, 50, 0.2);
-      transform: translateY(-2px) scale(1.65);
+      transform: translateY(-2px) scale(1.8);
     }
   }
 
@@ -623,6 +623,20 @@ redirect_from:
             <div class="academic-pub__meta">
               <p class="academic-pub__venue"><strong>CVPR 2026</strong></p>
               <div class="academic-pub__links"><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf">Paper</a></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="academic-pub">
+          <a class="academic-pub__figure" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/409334f42cbb57d07aa152f2d0433ec7-Abstract-Conference.html" aria-label="View SpGesture">
+            <img src="/images/home/spgesture-pipeline.webp" alt="Pipeline of the Jaccard Attention Spiking Neural Network for sEMG gesture recognition">
+          </a>
+          <div class="academic-pub__content">
+            <h3 class="academic-pub__title"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/409334f42cbb57d07aa152f2d0433ec7-Abstract-Conference.html">SpGesture: Source-Free Domain-adaptive sEMG-based Gesture Recognition with Jaccard Attentive Spiking Neural Network</a></h3>
+            <p class="academic-pub__authors">Weiyu Guo, Ying Sun<sup>∗</sup>, <strong>Yijie Xu</strong>, Ziyue Qiao, Yongkui Yang, Hui Xiong<sup>∗</sup></p>
+            <div class="academic-pub__meta">
+              <p class="academic-pub__venue"><strong>NeurIPS 2024</strong></p>
+              <div class="academic-pub__links"><a href="https://openreview.net/forum?id=GYqs5Z4joA">Paper</a><a href="https://arxiv.org/abs/2405.14398">arXiv</a></div>
             </div>
           </div>
         </article>
