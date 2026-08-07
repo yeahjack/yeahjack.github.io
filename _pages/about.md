@@ -19,9 +19,7 @@ redirect_from:
   <p>
     His current research centers on how language models acquire and leverage information to adapt and make decisions, with a focus on <strong>test-time self-evolution</strong>, <strong>generative retrieval</strong>, and <strong>retrieval-augmented generation (RAG)</strong>.
   </p>
-  <p>
-    He is looking for <strong>industry opportunities</strong>.
-  </p>
+  <p class="opportunity-note">Open to industry opportunities</p>
 </div>
 
 # 📢 News
