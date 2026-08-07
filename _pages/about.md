@@ -14,15 +14,24 @@ redirect_from:
     <a href="https://hkust-gz.edu.cn/">The Hong Kong University of Science and Technology, Guangzhou</a>, proudly supervised by 
     <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ"><strong>Prof. Hui Xiong</strong></a> 
     (Fellow of CAAI, CCF, IEEE, AAAI and AAAS). Besides, he also works closely with 
-    <a href="https://xuminghu.github.io/">Prof. Xuming Hu</a>.
+    <a href="https://xuminghu.github.io/">Prof. Xuming Hu</a>. He is now working as a <strong>Research Intern</strong> at <strong>Tencent</strong>.
   </p>
   <p>
-    His current research interests broadly lie in <strong>Natural Language Processing</strong> and <strong>Data Mining</strong>, with a particular focus on <strong>Test-time/Self-Evolving Language Models</strong> and <strong>Retrieval-Augmented Generation (RAG)</strong>; he also studies how humans and AI collaborate and interact.
+    His current research centers on how language models acquire and leverage information to adapt and make decisions, with a focus on <strong>test-time self-evolution</strong>, <strong>generative retrieval</strong>, and <strong>retrieval-augmented generation (RAG)</strong>.
+  </p>
+  <p>
+    He is looking for <strong>industry opportunities</strong>.
   </p>
 </div>
 
 # 📢 News
+<span class="news-date">Jul. 2026</span> One paper about <strong>Political Ideology Detection & Prediction</strong> has been accepted by [**ACM TIST**](https://dl.acm.org/journal/tist)!
+
 <span class="news-date">Jun. 2026</span> Invited as a **Reviewer** for [**TMLR**](https://jmlr.org/tmlr/)!
+
+<span class="news-date">May. 2026</span> Started working as a **Research Intern** at **Tencent**!
+
+<span class="news-date">May. 2026</span> Our paper [**SafeBuild-Bench**](https://arxiv.org/abs/2608.00068) has been accepted by the **KDD 2026 Datasets & Benchmarks Track**!
 
 <span class="news-date">Mar. 2026</span> Invited as a **Reviewer** for [**ACM Computing Surveys**](https://dl.acm.org/journal/csur)!
 
