@@ -519,12 +519,12 @@ redirect_from:
           <h2 id="news-title">News</h2>
         </div>
         <ul class="academic-news">
-          <li><time datetime="2026-07">Jul. 2026</time><span>Our paper on political ideology detection and prediction was accepted by ACM TIST.</span></li>
+          <li><time datetime="2026-07">Jul. 2026</time><span>One paper on political ideology detection and prediction was accepted by ACM TIST.</span></li>
           <li><time datetime="2026-05">May 2026</time><span>Started working as a Research Intern at Tencent.</span></li>
           <li><time datetime="2026-05">May 2026</time><span><a href="https://dl.acm.org/doi/10.1145/3770855.3817581">SafeBuild-Bench</a> was accepted by the KDD 2026 Datasets &amp; Benchmarks Track.</span></li>
-          <li><time datetime="2026-02">Feb. 2026</time><span>One paper on VLM unlearning was accepted by CVPR 2026.</span></li>
-          <li><time datetime="2025-11">Nov. 2025</time><span>One paper on source-free domain adaptation was accepted by AAAI 2026.</span></li>
-          <li><time datetime="2025-09">Sep. 2025</time><span>Two papers were accepted by NeurIPS 2025.</span></li>
+          <li><time datetime="2026-02">Feb. 2026</time><span>One paper on <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf">VLM unlearning</a> was accepted by CVPR 2026.</span></li>
+          <li><time datetime="2025-11">Nov. 2025</time><span>One paper on <a href="https://arxiv.org/abs/2511.07301">source-free domain adaptation</a> was accepted by AAAI 2026.</span></li>
+          <li><time datetime="2025-09">Sep. 2025</time><span>Two papers on <a href="https://arxiv.org/abs/2503.13139">key frame search for long-video understanding</a> and <a href="https://arxiv.org/abs/2509.16087">spatial prompting for VLMs</a> were accepted by NeurIPS 2025.</span></li>
         </ul>
       </section>
 
