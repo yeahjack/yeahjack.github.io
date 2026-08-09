@@ -580,7 +580,7 @@ redirect_from:
             <h3 class="academic-pub__title">Against Political Polarization: A Unified Framework for Tracing Evolving Political Ideologies on Social Media</h3>
             <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Chao Wang<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
             <div class="academic-pub__meta">
-              <p class="academic-pub__venue"><strong>ACM TIST</strong>, 2026</p>
+              <p class="academic-pub__venue"><strong>ACM Transactions on Intelligent Systems and Technology</strong>, 2026</p>
             </div>
           </div>
         </article>
