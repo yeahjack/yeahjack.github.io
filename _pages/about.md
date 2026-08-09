@@ -519,7 +519,7 @@ redirect_from:
           <h2 id="news-title">News</h2>
         </div>
         <ul class="academic-news">
-          <li><time datetime="2026-07">Jul. 2026</time><span>One paper on political ideology detection and prediction was accepted by ACM TIST.</span></li>
+          <li><time datetime="2026-07">Jul. 2026</time><span>One paper on political ideology detection and prediction was accepted by <a href="https://dl.acm.org/journal/tist">ACM TIST</a>.</span></li>
           <li><time datetime="2026-05">May 2026</time><span>Started working as a Research Intern at Tencent.</span></li>
           <li><time datetime="2026-05">May 2026</time><span><a href="https://dl.acm.org/doi/10.1145/3770855.3817581">SafeBuild-Bench</a> was accepted by the KDD 2026 Datasets &amp; Benchmarks Track.</span></li>
           <li><time datetime="2026-02">Feb. 2026</time><span>One paper on <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf">VLM unlearning</a> was accepted by CVPR 2026.</span></li>
