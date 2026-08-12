@@ -277,27 +277,46 @@ redirect_from:
   .academic-pub__figure {
     position: relative;
     align-self: start;
-    aspect-ratio: 1.9 / 1;
-    overflow: hidden;
+    overflow: visible;
     border: 1px solid var(--academic-rule);
     border-radius: 3px;
     background: #ffffff;
     box-shadow: 0 2px 8px rgba(35, 44, 50, 0.07);
-    transform-origin: left center;
     transition:
-      transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1),
       border-color 240ms ease,
       box-shadow 240ms ease;
-    will-change: transform;
   }
 
-  .academic-pub__figure img {
+  .academic-pub__thumbnail {
     display: block;
     width: 100%;
-    height: 100%;
-    padding: 0.24rem;
-    object-fit: contain;
-    transition: opacity 180ms ease;
+    height: auto;
+    border-radius: 2px;
+  }
+
+  .academic-pub__preview {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    max-width: min(680px, calc(100vw - 3rem));
+    max-height: calc(100vh - 3rem);
+    padding: 0.5rem;
+    border: 1px solid rgba(32, 95, 131, 0.3);
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 18px 44px rgba(35, 44, 50, 0.22);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition:
+      opacity 160ms ease,
+      visibility 160ms ease;
   }
 
   @media (hover: hover) and (pointer: fine) {
@@ -305,8 +324,13 @@ redirect_from:
     .academic-pub__figure:focus-visible {
       z-index: 10;
       border-color: rgba(32, 95, 131, 0.42);
-      box-shadow: 0 16px 38px rgba(35, 44, 50, 0.2);
-      transform: translateY(-2px) scale(1.8);
+      box-shadow: 0 8px 22px rgba(35, 44, 50, 0.14);
+    }
+
+    .academic-pub__figure:hover .academic-pub__preview,
+    .academic-pub__figure:focus-visible .academic-pub__preview {
+      opacity: 1;
+      visibility: visible;
     }
   }
 
@@ -448,7 +472,7 @@ redirect_from:
     }
 
     .academic-pub__figure {
-      aspect-ratio: 4 / 3;
+      width: 116px;
       max-width: 116px;
     }
 
@@ -469,7 +493,7 @@ redirect_from:
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .academic-pub__figure img,
+    .academic-pub__preview,
     .academic-pub__title a {
       transition: none;
     }
@@ -537,7 +561,8 @@ redirect_from:
 
         <article class="academic-pub">
           <a class="academic-pub__figure" href="https://arxiv.org/abs/2603.15381" aria-label="View You only need 4 extra tokens">
-            <img src="/images/home/sytta-method.webp" alt="SyTTA method overview combining input distribution adaptation, output confidence shaping, and dynamic weighting">
+            <img class="academic-pub__thumbnail" src="/images/home/sytta-method.webp?v=3" alt="SyTTA method overview combining input distribution adaptation, output confidence shaping, and dynamic weighting">
+            <img class="academic-pub__preview" src="/images/home/sytta-method.webp?v=3" alt="" aria-hidden="true">
           </a>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://arxiv.org/abs/2603.15381">You only need 4 extra tokens: Synergistic Test-time Adaptation for LLMs</a></h3>
@@ -550,8 +575,9 @@ redirect_from:
         </article>
 
         <article class="academic-pub" hidden>
-          <div class="academic-pub__figure" role="img" aria-label="Motivation figure comparing traditional post-training with decoupled ProximalTTA">
-            <img src="/images/home/rethinking-introduction.webp" alt="Comparison of traditional post-training and decoupled ProximalTTA">
+          <div class="academic-pub__figure" role="img" aria-label="Motivation figure comparing traditional post-training with decoupled ProximalTTA" tabindex="0">
+            <img class="academic-pub__thumbnail" src="/images/home/rethinking-introduction.webp?v=3" alt="Comparison of traditional post-training and decoupled ProximalTTA">
+            <img class="academic-pub__preview" src="/images/home/rethinking-introduction.webp?v=3" alt="" aria-hidden="true">
           </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title">Rethinking Test-Time Adaptation for LLMs as Decoupled Unsupervised Post-Training</h3>
@@ -560,8 +586,9 @@ redirect_from:
         </article>
 
         <article class="academic-pub">
-          <div class="academic-pub__figure" role="img" aria-label="Taxonomy of unsupervised post-training methods">
-            <img src="/images/home/upt-survey-taxonomy.webp" alt="Taxonomy tree for unsupervised post-training without external ground truth">
+          <div class="academic-pub__figure" role="img" aria-label="Taxonomy of unsupervised post-training methods" tabindex="0">
+            <img class="academic-pub__thumbnail" src="/images/home/upt-survey-taxonomy.webp?v=3" alt="Taxonomy tree for unsupervised post-training without external ground truth">
+            <img class="academic-pub__preview" src="/images/home/upt-survey-taxonomy.webp?v=3" alt="" aria-hidden="true">
           </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title">Unsupervised Post-Training of Foundation Models: A Survey</h3>
@@ -573,8 +600,9 @@ redirect_from:
         </article>
 
         <article class="academic-pub">
-          <div class="academic-pub__figure" role="img" aria-label="Method framework for political ideology detection and prediction">
-            <img src="/images/home/tist-method.webp" alt="TSN4PI framework with political ideology detection and prediction networks">
+          <div class="academic-pub__figure" role="img" aria-label="Method framework for political ideology detection and prediction" tabindex="0">
+            <img class="academic-pub__thumbnail" src="/images/home/tist-method.webp?v=3" alt="TSN4PI framework with political ideology detection and prediction networks">
+            <img class="academic-pub__preview" src="/images/home/tist-method.webp?v=3" alt="" aria-hidden="true">
           </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title">Against Political Polarization: A Unified Framework for Tracing Evolving Political Ideologies on Social Media</h3>
@@ -587,7 +615,8 @@ redirect_from:
 
         <article class="academic-pub">
           <a class="academic-pub__figure" href="https://openreview.net/forum?id=ixMBnOhFGd" aria-label="View SePer">
-            <img src="https://arxiv.org/html/2503.01478/extracted/6296347/figures/illustration.png" alt="Overview of semantic perplexity reduction for retrieval evaluation">
+            <img class="academic-pub__thumbnail" src="/images/home/seper-illustration.webp?v=3" alt="Overview of semantic perplexity reduction for retrieval evaluation">
+            <img class="academic-pub__preview" src="/images/home/seper-illustration.webp?v=3" alt="" aria-hidden="true">
           </a>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://openreview.net/forum?id=ixMBnOhFGd">SePer: Measure Retrieval Utility Through the Lens of Semantic Perplexity Reduction</a></h3>
@@ -601,7 +630,8 @@ redirect_from:
 
         <article class="academic-pub">
           <a class="academic-pub__figure" href="https://dl.acm.org/doi/10.1145/3770855.3817581" aria-label="View SafeBuild-Bench">
-            <img src="https://arxiv.org/html/2608.00068v1/GEMS/kdd-intro.png" alt="Overview of the SafeBuild-Bench construction safety benchmark">
+            <img class="academic-pub__thumbnail" src="/images/home/safebuild-intro.webp?v=3" alt="Overview of the SafeBuild-Bench construction safety benchmark">
+            <img class="academic-pub__preview" src="/images/home/safebuild-intro.webp?v=3" alt="" aria-hidden="true">
           </a>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://dl.acm.org/doi/10.1145/3770855.3817581">SafeBuild-Bench: A Temporal-Robust Construction Safety Benchmark with Graph-Enhanced Data Mining</a></h3>
@@ -615,7 +645,8 @@ redirect_from:
 
         <article class="academic-pub">
           <a class="academic-pub__figure" href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf" aria-label="View VL-Eraser">
-            <img src="/images/home/vl-eraser-method.webp" alt="VL-Eraser framework with vacuum distillation and arithmetic deletion stages">
+            <img class="academic-pub__thumbnail" src="/images/home/vl-eraser-method.webp?v=3" alt="VL-Eraser framework with vacuum distillation and arithmetic deletion stages">
+            <img class="academic-pub__preview" src="/images/home/vl-eraser-method.webp?v=3" alt="" aria-hidden="true">
           </a>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf">VL-Eraser: Vacuum Distillation for Machine Unlearning in Vision-Language Models</a></h3>
@@ -629,7 +660,8 @@ redirect_from:
 
         <article class="academic-pub">
           <a class="academic-pub__figure" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/409334f42cbb57d07aa152f2d0433ec7-Abstract-Conference.html" aria-label="View SpGesture">
-            <img src="/images/home/spgesture-pipeline.webp" alt="Pipeline of the Jaccard Attention Spiking Neural Network for sEMG gesture recognition">
+            <img class="academic-pub__thumbnail" src="/images/home/spgesture-pipeline.webp?v=3" alt="Pipeline of the Jaccard Attention Spiking Neural Network for sEMG gesture recognition">
+            <img class="academic-pub__preview" src="/images/home/spgesture-pipeline.webp?v=3" alt="" aria-hidden="true">
           </a>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/409334f42cbb57d07aa152f2d0433ec7-Abstract-Conference.html">SpGesture: Source-Free Domain-adaptive sEMG-based Gesture Recognition with Jaccard Attentive Spiking Neural Network</a></h3>
