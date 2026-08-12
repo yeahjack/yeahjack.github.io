@@ -573,8 +573,8 @@ redirect_from:
         </article>
 
         <article class="academic-pub">
-          <div class="academic-pub__figure" role="img" aria-label="Political ideology paper overview">
-            <img src="/images/home/tist-introduction.webp" alt="Political ideology dynamics across social media posts, temporal networks, and media-bias ratings">
+          <div class="academic-pub__figure" role="img" aria-label="Method framework for political ideology detection and prediction">
+            <img src="/images/home/tist-method.webp" alt="TSN4PI framework with political ideology detection and prediction networks">
           </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title">Against Political Polarization: A Unified Framework for Tracing Evolving Political Ideologies on Social Media</h3>
