@@ -7,7 +7,7 @@
     var root = document.documentElement;
     root.className = root.className.replace(/\bno-js\b/g, '') + ' js ';
 
-    // Restore the saved theme before CSS is loaded to avoid a light first paint.
+    /* Restore the saved theme before CSS is loaded to avoid a light first paint. */
     try {
       var savedTheme = localStorage.getItem('theme');
       if (savedTheme === 'dark') {
@@ -16,7 +16,7 @@
         root.removeAttribute('data-theme');
       }
     } catch (error) {
-      // Keep the server-rendered theme when storage is unavailable.
+      /* Keep the server-rendered theme when storage is unavailable. */
     }
   }());
 </script>
