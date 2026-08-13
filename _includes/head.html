@@ -12,7 +12,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function () {
+    var root = document.documentElement;
+    root.className = root.className.replace(/\bno-js\b/g, '') + ' js ';
+
+    // Restore the saved theme before CSS is loaded to avoid a light first paint.
+    try {
+      var savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        root.setAttribute('data-theme', 'dark');
+      } else if (savedTheme === 'light') {
+        root.removeAttribute('data-theme');
+      }
+    } catch (error) {
+      // Keep the server-rendered theme when storage is unavailable.
+    }
+  }());
 </script>
 
 <!-- For all browsers -->

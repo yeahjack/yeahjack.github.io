@@ -94,6 +94,11 @@ html[data-theme="dark"] {
     -webkit-backdrop-filter: blur(16px);
 }
 
+.masthead .greedy-nav,
+.masthead .visible-links > .masthead__menu-item {
+    background-color: transparent;
+}
+
 html[data-theme="dark"] .masthead {
     background: rgba(48, 48, 48, 0.84);
     border-bottom-color: rgba(14, 161, 197, 0.16);

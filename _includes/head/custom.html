@@ -10,6 +10,23 @@
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
+<script>
+  (function () {
+    var themeColor = document.querySelector('meta[name="theme-color"]');
+    var updateThemeColor = function () {
+      themeColor.setAttribute(
+        'content',
+        document.documentElement.getAttribute('data-theme') === 'dark' ? '#303030' : '#ffffff'
+      );
+    };
+
+    updateThemeColor();
+    new MutationObserver(updateThemeColor).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
+  }());
+</script>
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
 
