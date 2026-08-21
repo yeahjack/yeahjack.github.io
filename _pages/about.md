@@ -543,6 +543,7 @@ redirect_from:
           <h2 id="news-title">News</h2>
         </div>
         <ul class="academic-news">
+          <li><time datetime="2026-08">Aug. 2026</time><span>One survey paper on unsupervised post-training was accepted by <a href="https://2026.emnlp.org/">EMNLP 2026</a>.</span></li>
           <li><time datetime="2026-07">Jul. 2026</time><span>One paper on political ideology detection and prediction was accepted by <a href="https://dl.acm.org/journal/tist">ACM TIST</a>.</span></li>
           <li><time datetime="2026-05">May 2026</time><span>Started working as a Research Intern at Tencent.</span></li>
           <li><time datetime="2026-05">May 2026</time><span><a href="https://dl.acm.org/doi/10.1145/3770855.3817581">SafeBuild-Bench</a> was accepted by the KDD 2026 Datasets &amp; Benchmarks Track.</span></li>
@@ -558,6 +559,34 @@ redirect_from:
           <a href="https://scholar.google.com/citations?user=hBZs76kAAAAJ">Full list on Google Scholar</a>
         </div>
         <p class="academic-pub__legend"><sup>†</sup>: Co-first Authors; <sup>‡</sup>: Co-second Authors; <sup>∗</sup>: Corresponding Authors.</p>
+
+        <article class="academic-pub">
+          <div class="academic-pub__figure" role="img" aria-label="Taxonomy of unsupervised post-training methods" tabindex="0">
+            <img class="academic-pub__thumbnail" src="/images/home/upt-survey-taxonomy.webp?v=3" alt="Taxonomy tree for unsupervised post-training without external ground truth">
+            <img class="academic-pub__preview" src="/images/home/upt-survey-taxonomy.webp?v=3" alt="" aria-hidden="true">
+          </div>
+          <div class="academic-pub__content">
+            <h3 class="academic-pub__title">Unsupervised Post-Training of Foundation Models: A Survey</h3>
+            <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Qianyi Cai, Huizai Yao, Yili Wang, Tianfu Wang, Cehao Yang, Xingbo Yao, Zhiyu Guo, Aiwei Liu, Xuming Hu<sup>∗</sup>, Weiyu Guo<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
+            <div class="academic-pub__meta">
+              <p class="academic-pub__venue"><strong>EMNLP 2026</strong></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="academic-pub">
+          <div class="academic-pub__figure" role="img" aria-label="Method framework for political ideology detection and prediction" tabindex="0">
+            <img class="academic-pub__thumbnail" src="/images/home/tist-method.webp?v=3" alt="TSN4PI framework with political ideology detection and prediction networks">
+            <img class="academic-pub__preview" src="/images/home/tist-method.webp?v=3" alt="" aria-hidden="true">
+          </div>
+          <div class="academic-pub__content">
+            <h3 class="academic-pub__title">Against Political Polarization: A Unified Framework for Tracing Evolving Political Ideologies on Social Media</h3>
+            <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Chao Wang<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
+            <div class="academic-pub__meta">
+              <p class="academic-pub__venue"><strong>ACM Transactions on Intelligent Systems and Technology</strong>, 2026</p>
+            </div>
+          </div>
+        </article>
 
         <article class="academic-pub">
           <a class="academic-pub__figure" href="https://arxiv.org/abs/2603.15381" aria-label="View You only need 4 extra tokens">
@@ -582,34 +611,6 @@ redirect_from:
           <div class="academic-pub__content">
             <h3 class="academic-pub__title">Rethinking Test-Time Adaptation for LLMs as Decoupled Unsupervised Post-Training</h3>
             <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Yili Wang, Qianyi Cai, Huizai Yao, Hanqing Wang, Tianfu Wang, Aiwei Liu, Weiyu Guo, Xuming Hu<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
-          </div>
-        </article>
-
-        <article class="academic-pub">
-          <div class="academic-pub__figure" role="img" aria-label="Taxonomy of unsupervised post-training methods" tabindex="0">
-            <img class="academic-pub__thumbnail" src="/images/home/upt-survey-taxonomy.webp?v=3" alt="Taxonomy tree for unsupervised post-training without external ground truth">
-            <img class="academic-pub__preview" src="/images/home/upt-survey-taxonomy.webp?v=3" alt="" aria-hidden="true">
-          </div>
-          <div class="academic-pub__content">
-            <h3 class="academic-pub__title">Unsupervised Post-Training of Foundation Models: A Survey</h3>
-            <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Qianyi Cai, Huizai Yao, Yili Wang, Tianfu Wang, Cehao Yang, Xingbo Yao, Zhiyu Guo, Aiwei Liu, Xuming Hu<sup>∗</sup>, Weiyu Guo<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
-            <div class="academic-pub__meta">
-              <p class="academic-pub__venue"><strong>In submission</strong> to EMNLP 2026</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="academic-pub">
-          <div class="academic-pub__figure" role="img" aria-label="Method framework for political ideology detection and prediction" tabindex="0">
-            <img class="academic-pub__thumbnail" src="/images/home/tist-method.webp?v=3" alt="TSN4PI framework with political ideology detection and prediction networks">
-            <img class="academic-pub__preview" src="/images/home/tist-method.webp?v=3" alt="" aria-hidden="true">
-          </div>
-          <div class="academic-pub__content">
-            <h3 class="academic-pub__title">Against Political Polarization: A Unified Framework for Tracing Evolving Political Ideologies on Social Media</h3>
-            <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Chao Wang<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
-            <div class="academic-pub__meta">
-              <p class="academic-pub__venue"><strong>ACM Transactions on Intelligent Systems and Technology</strong>, 2026</p>
-            </div>
           </div>
         </article>
 
