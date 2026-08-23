@@ -575,16 +575,16 @@ redirect_from:
         </article>
 
         <article class="academic-pub">
-          <a class="academic-pub__figure" href="https://arxiv.org/abs/2608.17987" aria-label="View Against Political Polarization">
+          <a class="academic-pub__figure" href="https://dl.acm.org/doi/10.1145/3841463" aria-label="View Against Political Polarization">
             <img class="academic-pub__thumbnail" src="/images/home/tist-method.webp?v=3" alt="TSN4PI framework with political ideology detection and prediction networks">
             <img class="academic-pub__preview" src="/images/home/tist-method.webp?v=3" alt="" aria-hidden="true">
           </a>
           <div class="academic-pub__content">
-            <h3 class="academic-pub__title"><a href="https://arxiv.org/abs/2608.17987">Against Political Polarization: A Unified Framework for Tracing Evolving Political Ideologies on Social Media</a></h3>
+            <h3 class="academic-pub__title"><a href="https://dl.acm.org/doi/10.1145/3841463">Against Political Polarization: A Unified Framework for Tracing Evolving Political Ideologies on Social Media</a></h3>
             <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Chao Wang<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
             <div class="academic-pub__meta">
               <p class="academic-pub__venue"><strong>ACM Transactions on Intelligent Systems and Technology</strong>, 2026</p>
-              <div class="academic-pub__links"><a href="https://arxiv.org/abs/2608.17987">arXiv</a></div>
+              <div class="academic-pub__links"><a href="https://dl.acm.org/doi/10.1145/3841463">Paper</a><a href="https://arxiv.org/abs/2608.17987">arXiv</a></div>
             </div>
           </div>
         </article>
