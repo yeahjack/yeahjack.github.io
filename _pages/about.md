@@ -274,9 +274,14 @@ redirect_from:
     line-height: 1.45;
   }
 
-  .academic-pub__figure {
-    position: relative;
+  .academic-pub__figure-cell {
     align-self: start;
+    min-width: 0;
+  }
+
+  .academic-pub__figure {
+    display: block;
+    position: relative;
     overflow: visible;
     border: 1px solid var(--academic-rule);
     border-radius: 3px;
@@ -561,10 +566,12 @@ redirect_from:
         <p class="academic-pub__legend"><sup>†</sup>: Co-first Authors; <sup>‡</sup>: Co-second Authors; <sup>∗</sup>: Corresponding Authors.</p>
 
         <article class="academic-pub">
-          <a class="academic-pub__figure" href="https://arxiv.org/abs/2608.24982" aria-label="View Unsupervised Post-Training of Foundation Models">
-            <img class="academic-pub__thumbnail" src="/images/home/upt-survey-taxonomy.webp?v=4" alt="Taxonomy tree for unsupervised post-training without external ground truth">
-            <img class="academic-pub__preview" src="/images/home/upt-survey-taxonomy.webp?v=4" alt="" aria-hidden="true">
-          </a>
+          <div class="academic-pub__figure-cell">
+            <a class="academic-pub__figure" href="https://arxiv.org/abs/2608.24982" aria-label="View Unsupervised Post-Training of Foundation Models">
+              <img class="academic-pub__thumbnail" src="/images/home/upt-survey-taxonomy.webp?v=4" alt="Taxonomy tree for unsupervised post-training without external ground truth">
+              <img class="academic-pub__preview" src="/images/home/upt-survey-taxonomy.webp?v=4" alt="" aria-hidden="true">
+            </a>
+          </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://arxiv.org/abs/2608.24982">Unsupervised Post-Training of Foundation Models: A Survey</a></h3>
             <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Qianyi Cai, Huizai Yao, Yili Wang, Tianfu Wang, Cehao Yang, Xingbo Yao, Zhiyu Guo, Aiwei Liu, Xuming Hu<sup>∗</sup>, Weiyu Guo<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
@@ -576,10 +583,12 @@ redirect_from:
         </article>
 
         <article class="academic-pub">
-          <a class="academic-pub__figure" href="https://dl.acm.org/doi/10.1145/3841463" aria-label="View Against Political Polarization">
-            <img class="academic-pub__thumbnail" src="/images/home/tist-method.webp?v=3" alt="TSN4PI framework with political ideology detection and prediction networks">
-            <img class="academic-pub__preview" src="/images/home/tist-method.webp?v=3" alt="" aria-hidden="true">
-          </a>
+          <div class="academic-pub__figure-cell">
+            <a class="academic-pub__figure" href="https://dl.acm.org/doi/10.1145/3841463" aria-label="View Against Political Polarization">
+              <img class="academic-pub__thumbnail" src="/images/home/tist-method.webp?v=3" alt="TSN4PI framework with political ideology detection and prediction networks">
+              <img class="academic-pub__preview" src="/images/home/tist-method.webp?v=3" alt="" aria-hidden="true">
+            </a>
+          </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://dl.acm.org/doi/10.1145/3841463">Against Political Polarization: A Unified Framework for Tracing Evolving Political Ideologies on Social Media</a></h3>
             <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Chao Wang<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
@@ -591,10 +600,12 @@ redirect_from:
         </article>
 
         <article class="academic-pub">
-          <a class="academic-pub__figure" href="https://arxiv.org/abs/2603.15381" aria-label="View You only need 4 extra tokens">
-            <img class="academic-pub__thumbnail" src="/images/home/sytta-method.webp?v=3" alt="SyTTA method overview combining input distribution adaptation, output confidence shaping, and dynamic weighting">
-            <img class="academic-pub__preview" src="/images/home/sytta-method.webp?v=3" alt="" aria-hidden="true">
-          </a>
+          <div class="academic-pub__figure-cell">
+            <a class="academic-pub__figure" href="https://arxiv.org/abs/2603.15381" aria-label="View You only need 4 extra tokens">
+              <img class="academic-pub__thumbnail" src="/images/home/sytta-method.webp?v=3" alt="SyTTA method overview combining input distribution adaptation, output confidence shaping, and dynamic weighting">
+              <img class="academic-pub__preview" src="/images/home/sytta-method.webp?v=3" alt="" aria-hidden="true">
+            </a>
+          </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://arxiv.org/abs/2603.15381">You only need 4 extra tokens: Synergistic Test-time Adaptation for LLMs</a></h3>
             <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Huizai Yao, Zhiyu Guo, Weiyu Guo, Pengteng Li, Aiwei Liu, Xuming Hu<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
@@ -606,9 +617,11 @@ redirect_from:
         </article>
 
         <article class="academic-pub" hidden>
-          <div class="academic-pub__figure" role="img" aria-label="Motivation figure comparing traditional post-training with decoupled ProximalTTA" tabindex="0">
-            <img class="academic-pub__thumbnail" src="/images/home/rethinking-introduction.webp?v=3" alt="Comparison of traditional post-training and decoupled ProximalTTA">
-            <img class="academic-pub__preview" src="/images/home/rethinking-introduction.webp?v=3" alt="" aria-hidden="true">
+          <div class="academic-pub__figure-cell">
+            <div class="academic-pub__figure" role="img" aria-label="Motivation figure comparing traditional post-training with decoupled ProximalTTA" tabindex="0">
+              <img class="academic-pub__thumbnail" src="/images/home/rethinking-introduction.webp?v=3" alt="Comparison of traditional post-training and decoupled ProximalTTA">
+              <img class="academic-pub__preview" src="/images/home/rethinking-introduction.webp?v=3" alt="" aria-hidden="true">
+            </div>
           </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title">Rethinking Test-Time Adaptation for LLMs as Decoupled Unsupervised Post-Training</h3>
@@ -617,10 +630,12 @@ redirect_from:
         </article>
 
         <article class="academic-pub">
-          <a class="academic-pub__figure" href="https://openreview.net/forum?id=ixMBnOhFGd" aria-label="View SePer">
-            <img class="academic-pub__thumbnail" src="/images/home/seper-illustration.webp?v=3" alt="Overview of semantic perplexity reduction for retrieval evaluation">
-            <img class="academic-pub__preview" src="/images/home/seper-illustration.webp?v=3" alt="" aria-hidden="true">
-          </a>
+          <div class="academic-pub__figure-cell">
+            <a class="academic-pub__figure" href="https://openreview.net/forum?id=ixMBnOhFGd" aria-label="View SePer">
+              <img class="academic-pub__thumbnail" src="/images/home/seper-illustration.webp?v=3" alt="Overview of semantic perplexity reduction for retrieval evaluation">
+              <img class="academic-pub__preview" src="/images/home/seper-illustration.webp?v=3" alt="" aria-hidden="true">
+            </a>
+          </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://openreview.net/forum?id=ixMBnOhFGd">SePer: Measure Retrieval Utility Through the Lens of Semantic Perplexity Reduction</a></h3>
             <p class="academic-pub__authors">Lu Dai, <strong>Yijie Xu</strong>, Jinhui Ye, Hao Liu<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
@@ -632,10 +647,12 @@ redirect_from:
         </article>
 
         <article class="academic-pub">
-          <a class="academic-pub__figure" href="https://dl.acm.org/doi/10.1145/3770855.3817581" aria-label="View SafeBuild-Bench">
-            <img class="academic-pub__thumbnail" src="/images/home/safebuild-intro.webp?v=3" alt="Overview of the SafeBuild-Bench construction safety benchmark">
-            <img class="academic-pub__preview" src="/images/home/safebuild-intro.webp?v=3" alt="" aria-hidden="true">
-          </a>
+          <div class="academic-pub__figure-cell">
+            <a class="academic-pub__figure" href="https://dl.acm.org/doi/10.1145/3770855.3817581" aria-label="View SafeBuild-Bench">
+              <img class="academic-pub__thumbnail" src="/images/home/safebuild-intro.webp?v=3" alt="Overview of the SafeBuild-Bench construction safety benchmark">
+              <img class="academic-pub__preview" src="/images/home/safebuild-intro.webp?v=3" alt="" aria-hidden="true">
+            </a>
+          </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://dl.acm.org/doi/10.1145/3770855.3817581">SafeBuild-Bench: A Temporal-Robust Construction Safety Benchmark with Graph-Enhanced Data Mining</a></h3>
             <p class="academic-pub__authors">Yi Cui<sup>†</sup>, Zilin Wang<sup>†</sup>, <strong>Yijie Xu</strong>, Qianyi Cai, Huizai Yao, Shuai Jiang, Bingzhuo Zhong<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
@@ -647,10 +664,12 @@ redirect_from:
         </article>
 
         <article class="academic-pub">
-          <a class="academic-pub__figure" href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf" aria-label="View VL-Eraser">
-            <img class="academic-pub__thumbnail" src="/images/home/vl-eraser-method.webp?v=3" alt="VL-Eraser framework with vacuum distillation and arithmetic deletion stages">
-            <img class="academic-pub__preview" src="/images/home/vl-eraser-method.webp?v=3" alt="" aria-hidden="true">
-          </a>
+          <div class="academic-pub__figure-cell">
+            <a class="academic-pub__figure" href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf" aria-label="View VL-Eraser">
+              <img class="academic-pub__thumbnail" src="/images/home/vl-eraser-method.webp?v=3" alt="VL-Eraser framework with vacuum distillation and arithmetic deletion stages">
+              <img class="academic-pub__preview" src="/images/home/vl-eraser-method.webp?v=3" alt="" aria-hidden="true">
+            </a>
+          </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf">VL-Eraser: Vacuum Distillation for Machine Unlearning in Vision-Language Models</a></h3>
             <p class="academic-pub__authors">Yili Wang, Lu Dai<sup>‡</sup>, Tairan Huang<sup>‡</sup>, <strong>Yijie Xu</strong><sup>‡</sup>, Hui Xiong<sup>∗</sup></p>
@@ -662,10 +681,12 @@ redirect_from:
         </article>
 
         <article class="academic-pub">
-          <a class="academic-pub__figure" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/409334f42cbb57d07aa152f2d0433ec7-Abstract-Conference.html" aria-label="View SpGesture">
-            <img class="academic-pub__thumbnail" src="/images/home/spgesture-pipeline.webp?v=3" alt="Pipeline of the Jaccard Attention Spiking Neural Network for sEMG gesture recognition">
-            <img class="academic-pub__preview" src="/images/home/spgesture-pipeline.webp?v=3" alt="" aria-hidden="true">
-          </a>
+          <div class="academic-pub__figure-cell">
+            <a class="academic-pub__figure" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/409334f42cbb57d07aa152f2d0433ec7-Abstract-Conference.html" aria-label="View SpGesture">
+              <img class="academic-pub__thumbnail" src="/images/home/spgesture-pipeline.webp?v=3" alt="Pipeline of the Jaccard Attention Spiking Neural Network for sEMG gesture recognition">
+              <img class="academic-pub__preview" src="/images/home/spgesture-pipeline.webp?v=3" alt="" aria-hidden="true">
+            </a>
+          </div>
           <div class="academic-pub__content">
             <h3 class="academic-pub__title"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/409334f42cbb57d07aa152f2d0433ec7-Abstract-Conference.html">SpGesture: Source-Free Domain-adaptive sEMG-based Gesture Recognition with Jaccard Attentive Spiking Neural Network</a></h3>
             <p class="academic-pub__authors">Weiyu Guo, Ying Sun<sup>∗</sup>, <strong>Yijie Xu</strong>, Ziyue Qiao, Yongkui Yang, Hui Xiong<sup>∗</sup></p>
