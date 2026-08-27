@@ -561,15 +561,16 @@ redirect_from:
         <p class="academic-pub__legend"><sup>†</sup>: Co-first Authors; <sup>‡</sup>: Co-second Authors; <sup>∗</sup>: Corresponding Authors.</p>
 
         <article class="academic-pub">
-          <div class="academic-pub__figure" role="img" aria-label="Taxonomy of unsupervised post-training methods" tabindex="0">
+          <a class="academic-pub__figure" href="https://arxiv.org/abs/2608.24982" aria-label="View Unsupervised Post-Training of Foundation Models">
             <img class="academic-pub__thumbnail" src="/images/home/upt-survey-taxonomy.webp?v=4" alt="Taxonomy tree for unsupervised post-training without external ground truth">
             <img class="academic-pub__preview" src="/images/home/upt-survey-taxonomy.webp?v=4" alt="" aria-hidden="true">
-          </div>
+          </a>
           <div class="academic-pub__content">
-            <h3 class="academic-pub__title">Unsupervised Post-Training of Foundation Models: A Survey</h3>
+            <h3 class="academic-pub__title"><a href="https://arxiv.org/abs/2608.24982">Unsupervised Post-Training of Foundation Models: A Survey</a></h3>
             <p class="academic-pub__authors"><strong>Yijie Xu</strong>, Qianyi Cai, Huizai Yao, Yili Wang, Tianfu Wang, Cehao Yang, Xingbo Yao, Zhiyu Guo, Aiwei Liu, Xuming Hu<sup>∗</sup>, Weiyu Guo<sup>∗</sup>, Hui Xiong<sup>∗</sup></p>
             <div class="academic-pub__meta">
               <p class="academic-pub__venue"><strong>EMNLP 2026</strong></p>
+              <div class="academic-pub__links"><a href="https://arxiv.org/abs/2608.24982">arXiv</a></div>
             </div>
           </div>
         </article>
