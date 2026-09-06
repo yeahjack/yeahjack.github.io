@@ -11,7 +11,6 @@ This site is a static academic homepage hosted on GitHub Pages and served throug
 ## Information that may be collected
 
 - **Cloudflare** may process standard request logs such as IP address, browser type, and timestamps as part of operating the CDN and security features. See the [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/).
-- **Clustrmaps** provides the visitor map in the footer. That widget is loaded from Clustrmaps and may collect approximate visit statistics. See the [Clustrmaps privacy information](https://clustrmaps.com/).
 
 I do not run advertising networks, comment systems, or Google Analytics on this site. I do not sell personal information.
 
