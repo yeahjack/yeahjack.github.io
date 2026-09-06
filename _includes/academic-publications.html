@@ -1,0 +1,37 @@
+{% for pub in site.data.publications %}
+  <article class="academic-pub">
+    <div class="academic-pub__figure-cell">
+      <a
+        class="academic-pub__figure"
+        href="{{ pub.url }}"
+        rel="noopener noreferrer"
+        aria-label="View {{ pub.title | escape }}"
+        style="--figure-image: url('{{ pub.image }}')"
+      >
+        <img
+          class="academic-pub__thumbnail"
+          src="{{ pub.image }}"
+          alt="{{ pub.image_alt | escape }}"
+          loading="lazy"
+          decoding="async"
+        >
+      </a>
+    </div>
+    <div class="academic-pub__content">
+      <h3 class="academic-pub__title">
+        <a href="{{ pub.url }}" rel="noopener noreferrer">{{ pub.title }}</a>
+      </h3>
+      <p class="academic-pub__authors">{{ pub.authors_html }}</p>
+      <div class="academic-pub__meta">
+        <p class="academic-pub__venue">{{ pub.venue_html }}</p>
+        {% if pub.links %}
+          <div class="academic-pub__links">
+            {% for link in pub.links %}
+              <a href="{{ link.url }}" rel="noopener noreferrer">{{ link.label }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+{% endfor %}

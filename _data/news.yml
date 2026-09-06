@@ -1,0 +1,21 @@
+- date: "2026-08"
+  display: "Aug. 2026"
+  html: 'One survey paper on unsupervised post-training was accepted by <a href="https://2026.emnlp.org/" rel="noopener noreferrer">EMNLP 2026</a>.'
+- date: "2026-07"
+  display: "Jul. 2026"
+  html: 'One paper on political ideology detection and prediction was accepted by <a href="https://dl.acm.org/journal/tist" rel="noopener noreferrer">ACM TIST</a>.'
+- date: "2026-05"
+  display: "May 2026"
+  html: "Started working as a Research Intern at Tencent."
+- date: "2026-05"
+  display: "May 2026"
+  html: '<a href="https://dl.acm.org/doi/10.1145/3770855.3817581" rel="noopener noreferrer">SafeBuild-Bench</a> was accepted by the KDD 2026 Datasets &amp; Benchmarks Track.'
+- date: "2026-02"
+  display: "Feb. 2026"
+  html: 'One paper on <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf" rel="noopener noreferrer">VLM unlearning</a> was accepted by CVPR 2026.'
+- date: "2025-11"
+  display: "Nov. 2025"
+  html: 'One paper on <a href="https://arxiv.org/abs/2511.07301" rel="noopener noreferrer">source-free domain adaptation</a> was accepted by AAAI 2026.'
+- date: "2025-09"
+  display: "Sep. 2025"
+  html: 'Two papers on <a href="https://arxiv.org/abs/2503.13139" rel="noopener noreferrer">key frame search for long-video understanding</a> and <a href="https://arxiv.org/abs/2509.16087" rel="noopener noreferrer">spatial prompting for VLMs</a> were accepted by NeurIPS 2025.'

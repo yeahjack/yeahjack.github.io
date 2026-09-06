@@ -1,0 +1,23 @@
+{% include base_path %}
+<aside class="academic-profile" aria-label="Profile">
+  <div class="academic-profile__photo">
+    <img src="{{ base_path }}/images/profile.jpg" width="164" height="194" alt="Portrait of Yijie Xu" fetchpriority="high">
+  </div>
+  <div>
+    {% if include.heading_level == "cv" %}
+      <p class="academic-profile__name">Yijie Xu</p>
+    {% else %}
+      <h1>Yijie Xu</h1>
+    {% endif %}
+    <p class="academic-profile__role">Ph.D. Candidate in Artificial Intelligence</p>
+    <p class="academic-profile__affiliation">HKUST (Guangzhou)</p>
+  </div>
+  <nav class="academic-profile__links" aria-label="Profile links">
+    <a href="mailto:{{ site.author.email }}">Email</a>
+    <a href="{{ site.author.googlescholar }}" rel="noopener noreferrer">Google Scholar</a>
+    <a href="https://github.com/{{ site.author.github }}" rel="noopener noreferrer">GitHub</a>
+    {% unless include.heading_level == "cv" %}
+      <a href="{{ base_path }}/cv/">Curriculum Vitae</a>
+    {% endunless %}
+  </nav>
+</aside>
