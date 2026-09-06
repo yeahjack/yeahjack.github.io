@@ -1,39 +1,20 @@
 ---
 permalink: /terms/
-title: "Terms and Privacy Policy"
-modified: 2016-06-06
+title: "Privacy"
+layout: single
+author_profile: false
+modified: 2026-09-07
 ---
 
-{% include base_path %}
-{% include toc %}
+This site is a static academic homepage hosted on GitHub Pages and served through Cloudflare.
 
-## Privacy Policy
+## Information that may be collected
 
-The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
+- **Cloudflare** may process standard request logs such as IP address, browser type, and timestamps as part of operating the CDN and security features. See the [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/).
+- **Clustrmaps** provides the visitor map in the footer. That widget is loaded from Clustrmaps and may collect approximate visit statistics. See the [Clustrmaps privacy information](https://clustrmaps.com/).
 
-First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
+I do not run advertising networks, comment systems, or Google Analytics on this site. I do not sell personal information.
 
-### Log Files
+## Contact
 
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
-
-* Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
-
-All of this information is not linked to anything that is personally identifiable.
-
-### Cookies and Web Beacons
-
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](http://disqus.com) the next time you leave a comment.
-
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
-
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
-
-#### Google Analytics
-
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+Questions about this page: [{{ site.author.email }}](mailto:{{ site.author.email }}).
