@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /markdown/
+Disallow: /markdown_generator/
+Disallow: /talkmap
+Disallow: /talks/
+Disallow: /portfolio/
+Disallow: /cv-json/
+Disallow: /non-menu-page/
+Disallow: /archive-layout-with-content/
+Disallow: /collection-archive/
+Disallow: /page-archive/
+Disallow: /year-archive/
+Disallow: /categories/
+Disallow: /tags/
+Disallow: /others/tensorflow2-tutorial.pdf
+
+Sitemap: https://yjx.me/sitemap.xml
