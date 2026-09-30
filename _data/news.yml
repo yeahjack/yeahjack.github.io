@@ -1,3 +1,6 @@
+- date: "2026-09"
+  display: "Sep. 2026"
+  html: 'Two papers on <a>DLLM unlearning</a> and <a>MLLM continual learning</a> were accepted by <a href="https://neurips.cc/Conferences/2026" rel="noopener noreferrer">NeurIPS 2026</a>.'
 - date: "2026-08"
   display: "Aug. 2026"
   html: 'One survey paper on unsupervised post-training was accepted by <a href="https://2026.emnlp.org/" rel="noopener noreferrer">EMNLP 2026</a>.'

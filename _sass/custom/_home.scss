@@ -217,6 +217,10 @@ html[data-theme="dark"] #academic-home {
     margin: 0;
     padding: 0;
 
+    a:not([href]) {
+        text-decoration: underline;
+    }
+
     li {
         display: grid;
         grid-template-columns: 5.4rem minmax(0, 1fr);
