@@ -1,36 +1,7 @@
-- title: "Unsupervised Post-Training of Foundation Models: A Survey"
-  url: "https://arxiv.org/abs/2608.24982"
-  image: "/images/home/upt-survey-taxonomy.webp"
-  image_alt: "Taxonomy tree for unsupervised post-training without external ground truth"
-  authors_html: "<strong>Yijie Xu</strong>, Qianyi Cai, Huizai Yao, Yili Wang, Tianfu Wang, Cehao Yang, Xingbo Yao, Zhiyu Guo, Aiwei Liu, Xuming Hu<sup>∗</sup>, Weiyu Guo<sup>∗</sup>, Hui Xiong<sup>∗</sup>"
-  venue_html: "<strong>EMNLP 2026</strong>"
-  links:
-    - label: "arXiv"
-      url: "https://arxiv.org/abs/2608.24982"
-
-- title: "Against Political Polarization: A Unified Framework for Tracing Evolving Political Ideologies on Social Media"
-  url: "https://dl.acm.org/doi/10.1145/3841463"
-  image: "/images/home/tist-method.webp"
-  image_alt: "TSN4PI framework with political ideology detection and prediction networks"
-  authors_html: "<strong>Yijie Xu</strong>, Chao Wang<sup>∗</sup>, Hui Xiong<sup>∗</sup>"
-  venue_html: "<strong>ACM Transactions on Intelligent Systems and Technology</strong>, 2026"
-  links:
-    - label: "Paper"
-      url: "https://dl.acm.org/doi/10.1145/3841463"
-    - label: "arXiv"
-      url: "https://arxiv.org/abs/2608.17987"
-
-- title: "You only need 4 extra tokens: Synergistic Test-time Adaptation for LLMs"
-  url: "https://arxiv.org/abs/2603.15381"
-  image: "/images/home/sytta-method.webp"
-  image_alt: "SyTTA method overview combining input distribution adaptation, output confidence shaping, and dynamic weighting"
-  authors_html: "<strong>Yijie Xu</strong>, Huizai Yao, Zhiyu Guo, Weiyu Guo, Pengteng Li, Aiwei Liu, Xuming Hu<sup>∗</sup>, Hui Xiong<sup>∗</sup>"
-  venue_html: "<strong>Preprint</strong>, 2026"
-  links:
-    - label: "arXiv"
-      url: "https://arxiv.org/abs/2603.15381"
-
+# Follow the CV category order, then author contribution and acceptance date.
+# Keep the relative positions of preprints and papers without an acceptance result.
 - title: "SePer: Measure Retrieval Utility Through the Lens of Semantic Perplexity Reduction"
+  category: retrieval
   url: "https://openreview.net/forum?id=ixMBnOhFGd"
   image: "/images/home/seper-illustration.webp"
   image_alt: "Overview of semantic perplexity reduction for retrieval evaluation"
@@ -42,7 +13,54 @@
     - label: "arXiv"
       url: "https://arxiv.org/abs/2503.01478"
 
+- title: "Unsupervised Post-Training of Foundation Models: A Survey"
+  category: self-evolution
+  url: "https://arxiv.org/abs/2608.24982"
+  image: "/images/home/upt-survey-taxonomy.webp"
+  image_alt: "Taxonomy tree for unsupervised post-training without external ground truth"
+  authors_html: "<strong>Yijie Xu</strong>, Qianyi Cai, Huizai Yao, Yili Wang, Tianfu Wang, Cehao Yang, Xingbo Yao, Zhiyu Guo, Aiwei Liu, Xuming Hu<sup>∗</sup>, Weiyu Guo<sup>∗</sup>, Hui Xiong<sup>∗</sup>"
+  venue_html: "<strong>EMNLP 2026</strong>"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2608.24982"
+
+- title: "You only need 4 extra tokens: Synergistic Test-time Adaptation for LLMs"
+  category: self-evolution
+  url: "https://arxiv.org/abs/2603.15381"
+  image: "/images/home/sytta-method.webp"
+  image_alt: "SyTTA method overview combining input distribution adaptation, output confidence shaping, and dynamic weighting"
+  authors_html: "<strong>Yijie Xu</strong>, Huizai Yao, Zhiyu Guo, Weiyu Guo, Pengteng Li, Aiwei Liu, Xuming Hu<sup>∗</sup>, Hui Xiong<sup>∗</sup>"
+  venue_html: "<strong>Preprint</strong>, 2026"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2603.15381"
+
+- title: "VL-Eraser: Vacuum Distillation for Machine Unlearning in Vision-Language Models"
+  category: security
+  url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf"
+  image: "/images/home/vl-eraser-method.webp"
+  image_alt: "VL-Eraser framework with vacuum distillation and arithmetic deletion stages"
+  authors_html: "Yili Wang, Lu Dai<sup>‡</sup>, Tairan Huang<sup>‡</sup>, <strong>Yijie Xu</strong><sup>‡</sup>, Hui Xiong<sup>∗</sup>"
+  venue_html: "<strong>CVPR 2026</strong>"
+  links:
+    - label: "Paper"
+      url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf"
+
+- title: "Against Political Polarization: A Unified Framework for Tracing Evolving Political Ideologies on Social Media"
+  category: data-mining
+  url: "https://dl.acm.org/doi/10.1145/3841463"
+  image: "/images/home/tist-method.webp"
+  image_alt: "TSN4PI framework with political ideology detection and prediction networks"
+  authors_html: "<strong>Yijie Xu</strong>, Chao Wang<sup>∗</sup>, Hui Xiong<sup>∗</sup>"
+  venue_html: "<strong>ACM Transactions on Intelligent Systems and Technology</strong>, 2026"
+  links:
+    - label: "Paper"
+      url: "https://dl.acm.org/doi/10.1145/3841463"
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2608.17987"
+
 - title: "SafeBuild-Bench: A Temporal-Robust Construction Safety Benchmark with Graph-Enhanced Data Mining"
+  category: data-mining
   url: "https://dl.acm.org/doi/10.1145/3770855.3817581"
   image: "/images/home/safebuild-intro.webp"
   image_alt: "Overview of the SafeBuild-Bench construction safety benchmark"
@@ -54,17 +72,8 @@
     - label: "arXiv"
       url: "https://arxiv.org/abs/2608.00068"
 
-- title: "VL-Eraser: Vacuum Distillation for Machine Unlearning in Vision-Language Models"
-  url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf"
-  image: "/images/home/vl-eraser-method.webp"
-  image_alt: "VL-Eraser framework with vacuum distillation and arithmetic deletion stages"
-  authors_html: "Yili Wang, Lu Dai<sup>‡</sup>, Tairan Huang<sup>‡</sup>, <strong>Yijie Xu</strong><sup>‡</sup>, Hui Xiong<sup>∗</sup>"
-  venue_html: "<strong>CVPR 2026</strong>"
-  links:
-    - label: "Paper"
-      url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf"
-
 - title: "SpGesture: Source-Free Domain-adaptive sEMG-based Gesture Recognition with Jaccard Attentive Spiking Neural Network"
+  category: multimodal
   url: "https://proceedings.neurips.cc/paper_files/paper/2024/hash/409334f42cbb57d07aa152f2d0433ec7-Abstract-Conference.html"
   image: "/images/home/spgesture-pipeline.webp"
   image_alt: "Pipeline of the Jaccard Attention Spiking Neural Network for sEMG gesture recognition"

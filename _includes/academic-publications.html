@@ -1,4 +1,9 @@
-{% for pub in site.data.publications %}
+{% for group in site.data.publication_groups %}
+  {% assign publications = site.data.publications | where: "category", group.id %}
+  {% if publications.size > 0 %}
+  <section class="academic-pub-group" aria-labelledby="publications-{{ group.id }}">
+    <h3 class="academic-pub-group__heading" id="publications-{{ group.id }}">{{ group.title | escape }}</h3>
+    {% for pub in publications %}
   <article class="academic-pub">
     <div class="academic-pub__figure-cell">
       <a
@@ -18,9 +23,9 @@
       </a>
     </div>
     <div class="academic-pub__content">
-      <h3 class="academic-pub__title">
+      <h4 class="academic-pub__title">
         <a href="{{ pub.url }}" rel="noopener noreferrer">{{ pub.title }}</a>
-      </h3>
+      </h4>
       <p class="academic-pub__authors">{{ pub.authors_html }}</p>
       <div class="academic-pub__meta">
         <p class="academic-pub__venue">{{ pub.venue_html }}</p>
@@ -34,4 +39,7 @@
       </div>
     </div>
   </article>
+    {% endfor %}
+  </section>
+  {% endif %}
 {% endfor %}

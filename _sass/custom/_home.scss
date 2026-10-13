@@ -189,6 +189,7 @@ html[data-theme="dark"] #academic-home {
     h1,
     h2 {
         margin: 0;
+        scroll-margin-top: 5rem;
         color: var(--academic-ink);
         font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
         font-size: 1.48rem;
@@ -241,6 +242,35 @@ html[data-theme="dark"] #academic-home {
         letter-spacing: 0.025em;
         padding-top: 0.08rem;
         white-space: nowrap;
+    }
+}
+
+.academic-pub-group {
+    margin-top: 1rem;
+
+    & + & {
+        margin-top: 1.2rem;
+    }
+}
+
+.academic-pub-group__heading {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin: 0 0 0.12rem;
+    scroll-margin-top: 5rem;
+    color: var(--academic-ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.35;
+    text-wrap: balance;
+
+    &::after {
+        flex: 1 0 1rem;
+        height: 1px;
+        background: var(--academic-rule);
+        content: "";
     }
 }
 
