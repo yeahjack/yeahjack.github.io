@@ -1,0 +1,26 @@
+---
+layout: compress
+---
+{% include base_path %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+    <link rel="stylesheet" href="{{ base_path }}/assets/css/academic-home.css">
+  </head>
+  <body class="academic-home-page">
+    <a class="skip-link" href="#site-content">Skip to content</a>
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+    <div id="site-content">{{ content }}</div>
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+    {% include scripts.html %}
+    <script src="{{ base_path }}/assets/js/academic-home.js"></script>
+  </body>
+</html>

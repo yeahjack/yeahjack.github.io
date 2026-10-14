@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: academic-home
 permalink: /
 excerpt: "Yijie Xu — Ph.D. Candidate in Artificial Intelligence"
 redirect_from:
@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<div id="academic-home">
+<div id="academic-home" class="academic-home--refined">
   <div class="academic-shell">
     {% include academic-profile.html %}
 
@@ -49,4 +49,5 @@ redirect_from:
       <p class="academic-contact">For research discussions or industry opportunities, the fastest way to reach me is <a href="mailto:{{ site.author.email }}">email</a>.</p>
     </main>
   </div>
+  {% include academic-figure-preview.html %}
 </div>

@@ -1,0 +1,8 @@
+# Original figure dimensions for sharp, on-demand publication previews.
+seper-illustration.webp: { width: 2131, height: 1333 }
+upt-survey-taxonomy.webp: { width: 4155, height: 3116 }
+sytta-method.webp: { width: 2400, height: 790 }
+vl-eraser-method.webp: { width: 1401, height: 556 }
+tist-method.webp: { width: 2400, height: 1454 }
+safebuild-intro.webp: { width: 1988, height: 1570 }
+spgesture-pipeline.webp: { width: 2400, height: 835 }

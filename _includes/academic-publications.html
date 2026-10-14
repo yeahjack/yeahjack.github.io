@@ -1,45 +1,39 @@
 {% for group in site.data.publication_groups %}
   {% assign publications = site.data.publications | where: "category", group.id %}
   {% if publications.size > 0 %}
-  <section class="academic-pub-group" aria-labelledby="publications-{{ group.id }}">
-    <h3 class="academic-pub-group__heading" id="publications-{{ group.id }}">{{ group.title | escape }}</h3>
-    {% for pub in publications %}
-  <article class="academic-pub">
-    <div class="academic-pub__figure-cell">
-      <a
-        class="academic-pub__figure"
-        href="{{ pub.url }}"
-        rel="noopener noreferrer"
-        aria-label="View {{ pub.title | escape }}"
-        style="--figure-image: url('{{ pub.image }}')"
-      >
-        <img
-          class="academic-pub__thumbnail"
-          src="{{ pub.image }}"
-          alt="{{ pub.image_alt | escape }}"
-          loading="lazy"
-          decoding="async"
-        >
-      </a>
-    </div>
-    <div class="academic-pub__content">
-      <h4 class="academic-pub__title">
-        <a href="{{ pub.url }}" rel="noopener noreferrer">{{ pub.title }}</a>
-      </h4>
-      <p class="academic-pub__authors">{{ pub.authors_html }}</p>
-      <div class="academic-pub__meta">
-        <p class="academic-pub__venue">{{ pub.venue_html }}</p>
-        {% if pub.links %}
-          <div class="academic-pub__links">
-            {% for link in pub.links %}
-              <a href="{{ link.url }}" rel="noopener noreferrer">{{ link.label }}</a>
-            {% endfor %}
+    <section class="academic-pub-group" aria-labelledby="publications-{{ group.id }}">
+      <h3 class="academic-pub-group__heading" id="publications-{{ group.id }}">{{ group.title | escape }}</h3>
+      {% for pub in publications %}
+        {% assign figure_file = pub.image | split: '/' | last %}
+        {% assign figure_size = site.data.publication_figures[figure_file] %}
+        <article class="academic-pub">
+          <div class="academic-pub__figure-cell">
+            <button class="academic-pub__figure preview-figure-trigger" type="button"
+              aria-label="Enlarge figure: {{ pub.title | escape }}"
+              aria-haspopup="dialog" aria-controls="preview-figure-dialog"
+              data-paper-url="{{ pub.url | escape }}" data-paper-title="{{ pub.title | escape }}"
+              data-preview-image="{{ pub.image | replace: '/images/home/', '/images/home/originals/' }}"
+              data-preview-width="{{ figure_size.width }}" data-preview-height="{{ figure_size.height }}">
+              <img class="academic-pub__thumbnail" src="{{ pub.image }}" alt="{{ pub.image_alt | escape }}" width="{{ figure_size.width }}" height="{{ figure_size.height }}" loading="lazy" decoding="async">
+              <span class="preview-figure-trigger__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg>
+              </span>
+            </button>
           </div>
-        {% endif %}
-      </div>
-    </div>
-  </article>
-    {% endfor %}
-  </section>
+          <div class="academic-pub__content">
+            <h4 class="academic-pub__title"><a href="{{ pub.url }}" rel="noopener noreferrer">{{ pub.title }}</a></h4>
+            <p class="academic-pub__authors">{{ pub.authors_html }}</p>
+            <div class="academic-pub__meta">
+              <p class="academic-pub__venue">{{ pub.venue_html }}</p>
+              {% if pub.links %}
+                <div class="academic-pub__links">
+                  {% for link in pub.links %}<a href="{{ link.url }}" rel="noopener noreferrer">{{ link.label }}</a>{% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </section>
   {% endif %}
 {% endfor %}
