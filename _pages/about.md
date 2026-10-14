@@ -40,18 +40,7 @@ redirect_from:
       <section class="academic-section" aria-labelledby="publications-title">
         <div class="academic-section__heading">
           <h2 id="publications-title">Selected Publications</h2>
-          {% capture scholar_endpoint %}https://raw.githubusercontent.com/{{ site.repository }}/master/gs_data.json{% endcapture %}
-          <a class="academic-scholar-summary" href="{{ site.author.googlescholar }}" rel="noopener noreferrer"
-            title="Total Google Scholar citations, checked {{ site.data.scholar.checked_on | date: '%B %-d, %Y' }}"
-            aria-label="Google Scholar profile, {{ site.data.scholar.total_citations }} total citations, checked {{ site.data.scholar.checked_on | date: '%B %-d, %Y' }}">
-            {% if jekyll.environment == 'production' %}
-            <img src="https://img.shields.io/endpoint?url={{ scholar_endpoint | uri_escape }}&amp;cacheSeconds=21600"
-              alt="Google Scholar: {{ site.data.scholar.total_citations }} total citations" height="20" decoding="async" referrerpolicy="no-referrer">
-            {% else %}
-            <img src="https://img.shields.io/badge/Google%20Scholar-{{ site.data.scholar.total_citations }}%20citations-245f7a?logo=googlescholar&amp;logoColor=white&amp;labelColor=626b70&amp;style=flat-square"
-              alt="Google Scholar: {{ site.data.scholar.total_citations }} total citations" height="20" decoding="async" referrerpolicy="no-referrer">
-            {% endif %}
-          </a>
+          <a href="{{ site.author.googlescholar }}" rel="noopener noreferrer">Full list on Google Scholar</a>
         </div>
         <p class="academic-pub__legend"><sup>†</sup>: Co-first Authors; <sup>‡</sup>: Co-second Authors; <sup>∗</sup>: Corresponding Authors.</p>
         {% include academic-publications.html %}
