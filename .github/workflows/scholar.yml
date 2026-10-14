@@ -16,7 +16,9 @@ concurrency:
 jobs:
   update-citations:
     if: github.repository == 'yeahjack/yeahjack.github.io' && github.ref == 'refs/heads/master'
-    runs-on: ubuntu-latest
+    # Ubuntu's hosted runner was denied by Scholar (HTTP 403).
+    # Keep this small weekly public-profile request on a macOS runner.
+    runs-on: macos-latest
     timeout-minutes: 5
     permissions:
       contents: write
