@@ -1,0 +1,12 @@
+- name: RTK
+  github_repository: rtk-ai/rtk
+  title: "RTK: Token-efficient tooling for AI coding agents"
+  url: "https://github.com/rtk-ai/rtk"
+  description: "I maintain RTK, a Rust-based command-line tool that filters and compresses terminal output before it reaches AI coding agents, reducing redundant context in coding and debugging workflows."
+  links:
+    - label: GitHub
+      url: "https://github.com/rtk-ai/rtk"
+    - label: Documentation
+      url: "https://www.rtk-ai.app/docs/"
+    - label: Contributions
+      url: "/rtk-contributions/"

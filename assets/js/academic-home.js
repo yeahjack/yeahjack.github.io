@@ -79,7 +79,11 @@
       dialogImage.src = image.currentSrc || image.src;
       dialogImage.alt = image.alt;
       title.textContent = trigger.dataset.paperTitle;
-      paperLink.href = trigger.dataset.paperUrl;
+      var paperUrl = trigger.dataset.paperUrl;
+      paperLink.parentElement.hidden = !paperUrl;
+      dialog.classList.toggle('preview-figure-dialog--no-paper', !paperUrl);
+      if (paperUrl) paperLink.href = paperUrl;
+      else paperLink.removeAttribute('href');
       dialog.classList.toggle('is-keyboard-open', event.detail === 0);
       dialog.showModal();
       fitDialog();

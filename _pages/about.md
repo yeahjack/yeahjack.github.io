@@ -40,10 +40,28 @@ redirect_from:
       <section class="academic-section" aria-labelledby="publications-title">
         <div class="academic-section__heading">
           <h2 id="publications-title">Selected Publications</h2>
-          <a href="https://scholar.google.com/citations?user=hBZs76kAAAAJ" rel="noopener noreferrer">Full list on Google Scholar</a>
+          {% capture scholar_endpoint %}https://raw.githubusercontent.com/{{ site.repository }}/master/gs_data.json{% endcapture %}
+          <a class="academic-scholar-summary" href="{{ site.author.googlescholar }}" rel="noopener noreferrer"
+            title="Total Google Scholar citations, checked {{ site.data.scholar.checked_on | date: '%B %-d, %Y' }}"
+            aria-label="Google Scholar profile, {{ site.data.scholar.total_citations }} total citations, checked {{ site.data.scholar.checked_on | date: '%B %-d, %Y' }}">
+            {% if jekyll.environment == 'production' %}
+            <img src="https://img.shields.io/endpoint?url={{ scholar_endpoint | uri_escape }}&amp;cacheSeconds=21600"
+              alt="Google Scholar: {{ site.data.scholar.total_citations }} total citations" height="20" decoding="async" referrerpolicy="no-referrer">
+            {% else %}
+            <img src="https://img.shields.io/badge/Google%20Scholar-{{ site.data.scholar.total_citations }}%20citations-245f7a?logo=googlescholar&amp;logoColor=white&amp;labelColor=626b70&amp;style=flat-square"
+              alt="Google Scholar: {{ site.data.scholar.total_citations }} total citations" height="20" decoding="async" referrerpolicy="no-referrer">
+            {% endif %}
+          </a>
         </div>
         <p class="academic-pub__legend"><sup>†</sup>: Co-first Authors; <sup>‡</sup>: Co-second Authors; <sup>∗</sup>: Corresponding Authors.</p>
         {% include academic-publications.html %}
+      </section>
+
+      <section class="academic-section" aria-labelledby="software-title">
+        <div class="academic-section__heading">
+          <h2 id="software-title">Open-source Software</h2>
+        </div>
+        {% include academic-software.html %}
       </section>
 
       <p class="academic-contact">For research discussions or industry opportunities, the fastest way to reach me is <a href="mailto:{{ site.author.email }}">email</a>.</p>

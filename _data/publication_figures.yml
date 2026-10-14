@@ -6,3 +6,6 @@ vl-eraser-method.webp: { width: 1401, height: 556 }
 tist-method.webp: { width: 2400, height: 1454 }
 safebuild-intro.webp: { width: 1988, height: 1570 }
 spgesture-pipeline.webp: { width: 2400, height: 835 }
+logic-in-frames-method.webp: { width: 2400, height: 876 }
+dllm-unlearning-method.webp: { width: 2400, height: 1230 }
+gui-grounding-method.webp: { width: 2400, height: 1193 }

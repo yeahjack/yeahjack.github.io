@@ -35,6 +35,24 @@
     - label: "arXiv"
       url: "https://arxiv.org/abs/2603.15381"
 
+- title: "Gated Test-Time Scaling for GUI Grounding via Multi-Seed Zoom Search"
+  category: self-evolution
+  image: "/images/home/gui-grounding-method.webp"
+  image_alt: "Gated SeedZoom framework with global sampling, easy-case gating, multi-seed zoom search, and final grounding"
+  authors_html: "Huizai Yao, <strong>Yijie Xu</strong>, Tianfu Wang, Yili Wang, Yi Cui, Yunfan Lu, Fengjie Zhu, Xuemin Zhao, Hengyao Bao, Ying Sun<sup>∗</sup>, Hui Xiong<sup>∗</sup>"
+  venue_html: "<strong>Preprint</strong>, 2026"
+
+- title: "Machine Unlearning in Diffusion LLMs"
+  category: security
+  url: "https://openreview.net/forum?id=Dlj9mRJfOq"
+  image: "/images/home/dllm-unlearning-method.webp"
+  image_alt: "DL-Eraser framework combining a recovery-guided unlearning objective and retain-dominant subspace projection"
+  authors_html: "Yili Wang, <strong>Yijie Xu</strong>, Lu Dai, Tairan Huang, Qianyi Cai, Huizai Yao, Tianfu Wang, Hui Xiong<sup>∗</sup>"
+  venue_html: "<strong>NeurIPS 2026</strong>"
+  links:
+    - label: "Paper"
+      url: "https://openreview.net/forum?id=Dlj9mRJfOq"
+
 - title: "VL-Eraser: Vacuum Distillation for Machine Unlearning in Vision-Language Models"
   category: security
   url: "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_VL-Eraser_Vacuum_Distillation_for_Machine_Unlearning_in_Vision-Language_Models_CVPR_2026_paper.pdf"
@@ -71,6 +89,19 @@
       url: "https://dl.acm.org/doi/10.1145/3770855.3817581"
     - label: "arXiv"
       url: "https://arxiv.org/abs/2608.00068"
+
+- title: "Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification for Long Video Understanding"
+  category: multimodal
+  url: "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b432bc78522b3230f30f16e7c0f3ab98-Abstract-Conference.html"
+  image: "/images/home/logic-in-frames-method.webp"
+  image_alt: "Logic-in-Frames pipeline combining visual semantic-logical relation detection with adaptive keyframe search"
+  authors_html: "Weiyu Guo<sup>†</sup>, Ziyang Chen<sup>†</sup>, Shaoguang Wang, Jianxiang He, <strong>Yijie Xu</strong>, Jinhui Ye, Ying Sun<sup>∗</sup>, Hui Xiong<sup>∗</sup>"
+  venue_html: "<strong>NeurIPS 2025</strong>"
+  links:
+    - label: "Paper"
+      url: "https://proceedings.neurips.cc/paper_files/paper/2025/file/b432bc78522b3230f30f16e7c0f3ab98-Paper-Conference.pdf"
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2503.13139"
 
 - title: "SpGesture: Source-Free Domain-adaptive sEMG-based Gesture Recognition with Jaccard Attentive Spiking Neural Network"
   category: multimodal

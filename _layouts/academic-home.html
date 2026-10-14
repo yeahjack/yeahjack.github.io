@@ -8,6 +8,7 @@ layout: compress
     {% include head.html %}
     {% include head/custom.html %}
     <link rel="stylesheet" href="{{ base_path }}/assets/css/academic-home.css">
+    {% if page.permalink == '/rtk-contributions/' %}<link rel="stylesheet" href="{{ base_path }}/assets/css/rtk-contributions.css">{% endif %}
   </head>
   <body class="academic-home-page">
     <a class="skip-link" href="#site-content">Skip to content</a>
@@ -21,6 +22,6 @@ layout: compress
       </footer>
     </div>
     {% include scripts.html %}
-    <script src="{{ base_path }}/assets/js/academic-home.js"></script>
+    {% unless page.academic_script == false %}<script src="{{ base_path }}/assets/js/academic-home.js"></script>{% endunless %}
   </body>
 </html>

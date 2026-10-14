@@ -1,0 +1,128 @@
+# Full author search and PR states checked against GitHub REST and GraphQL APIs.
+# Each PR belongs to exactly one primary category; stacked diffs are not additive.
+checked_on: "2026-10-14"
+author: yeahjack
+repository: "https://github.com/rtk-ai/rtk"
+search_url: "https://github.com/rtk-ai/rtk/pulls?q=is%3Apr+author%3Ayeahjack"
+groups:
+  - id: agent-integrations
+    title: Agent integrations & configuration
+    summary: "Bringing RTK into coding agents through native hooks, with careful handling of user configuration and host permissions."
+    pull_requests:
+      - number: 3552
+        title: Native Codex command rewriting
+        status: merged
+        submitted_on: "2026-08-12"
+        merged_on: "2026-09-13"
+        summary: "Added direct PreToolUse command rewriting, local/global installation, status checks, backups and uninstall support. Rewritten commands still go through Codex's native approval and sandbox flow."
+      - number: 4151
+        title: Shared hook configuration infrastructure
+        status: merged
+        submitted_on: "2026-09-20"
+        merged_on: "2026-09-24"
+        summary: "Consolidated hook configuration I/O across agents, preserved unrelated user hooks during removal, and retained extra tool-input fields in VS Code/Copilot rewrites."
+      - number: 4236
+        title: WorkBuddy integration
+        status: open
+        submitted_on: "2026-09-25"
+        summary: "Proposes a native WorkBuddy hook with global installation, status and scoped uninstall. Preserves input metadata and leaves permission decisions to WorkBuddy; desktop rewriting was tested, while global discovery remains unverified."
+      - number: 4405
+        title: Preserve user prose during uninstall
+        status: open
+        submitted_on: "2026-10-02"
+        summary: "Fixes marker pairing and exact RTK reference removal so uninstall does not duplicate or delete unrelated prose. Adds regressions for malformed markers, repeated cleanup and dry runs."
+      - number: 4352
+        title: Mixed legacy/native Codex hook migration
+        status: closed
+        submitted_on: "2026-09-30"
+        summary: "Completes migration when legacy and native Codex hooks coexist, while preserving the native hook and user metadata. Builds on another contributor's original migration work."
+        note: "Closed as a duplicate; the maintainer confirmed the same change is carried by #4309, which is still open."
+        note_url: "https://github.com/rtk-ai/rtk/pull/4352#issuecomment-5969578437"
+  - id: output-fidelity
+    title: Command output & tool support
+    summary: "Reducing redundant output without losing diagnostics, argument boundaries or the behavior developers expect from their tools."
+    pull_requests:
+      - number: 4410
+        title: Conservative Angular build compression
+        status: open
+        submitted_on: "2026-10-02"
+        summary: "Adds native ng build support that compacts recognized build tables while preserving chunk information, diagnostics and exit status. Unknown output and explicit help, verbose or watch modes pass through unchanged."
+      - number: 4454
+        title: Preserve Cargo test listings
+        status: open
+        submitted_on: "2026-10-05"
+        summary: "Passes cargo test -- --list through intact, including stdout, stderr and exit status. Handles Cargo/libtest argument boundaries without changing ordinary test-result compression."
+      - number: 4455
+        title: Lossless fallback for piped Go test output
+        status: open
+        submitted_on: "2026-10-05"
+        summary: "Recognizes Go test event streams before filtering. Plain text, malformed or unrelated JSON, and mixed reports remain intact instead of losing failure diagnostics."
+      - number: 4456
+        title: End-to-end Vitest and Jest routing tests
+        status: open
+        submitted_on: "2026-10-05"
+        summary: "Tests the public CLI through real process spawning: executable identity, exact arguments, reporter passthrough, failure propagation and offline package-manager fallback. This PR changes tests, not production behavior."
+  - id: accounting
+    title: Savings accounting & validation
+    summary: "Making reported savings inspectable and consistent, including output expansion, recovery costs and the limits of token estimates."
+    pull_requests:
+      - number: 4541
+        title: Invocation tracking and recovery-output accounting
+        status: open
+        submitted_on: "2026-10-12"
+        summary: "Links supported native Claude hook rewrites to command invocations and measures bytes emitted by actual recall reads. Exports signed net output savings with explicit coverage limits, rather than claiming complete context or billing measurements."
+      - number: 4436
+        title: Signed net savings across reports
+        status: open
+        submitted_on: "2026-10-03"
+        summary: "Preserves negative savings when output grows, consistently across summaries, history, command groups, time periods and exports. Makes regressing commands visible instead of clamping losses to zero."
+      - number: 4435
+        title: Explore savings by command
+        status: open
+        submitted_on: "2026-10-03"
+        summary: "Adds sorting, filtering, exclusion and row limits to the gain command table, with matching JSON/CSV exports. Keeps project scope, weighted ratios and deterministic ordering."
+      - number: 4409
+        title: Correct weekly spending joins
+        status: open
+        submitted_on: "2026-10-02"
+        summary: "Aligns RTK and ccusage reports on the same Monday week boundary and aggregates duplicate project-week rows. Covers legacy regrouping and invalid data without silently shifting dates."
+      - number: 4407
+        title: Consistent token-estimate validation
+        status: open
+        submitted_on: "2026-10-02"
+        summary: "Aligns savings tests with RTK's production UTF-8 byte estimator instead of word counts. Adds exact-output and token-count assertions, documents two adjusted fixture thresholds, and leaves filter output unchanged."
+  - id: recovery
+    title: Output recovery & storage
+    summary: "Keeping compressed-away output recoverable while bounding storage, preserving capture identity and making sensitive-data risks explicit."
+    pull_requests:
+      - number: 4542
+        title: Immutable capture references
+        status: open
+        submitted_on: "2026-10-12"
+        summary: "Separates capture identity from deduplicated payloads so repeated output cannot change an earlier hint's offset, metadata or retained bytes. Expired references fail clearly rather than returning another run's output."
+      - number: 4540
+        title: Batched search-recovery writes
+        status: open
+        submitted_on: "2026-10-12"
+        summary: "Batches grouped grep/rg recovery writes into one SQLite transaction. Preserves per-file capture references and retention limits, advertises only surviving captures, and includes matched-predecessor benchmarks and regressions."
+        note: "A stacked integration PR that includes companion changes; its full diff is not an independent contribution count."
+      - number: 4539
+        title: Scoped recovery-data cleanup
+        status: open
+        submitted_on: "2026-10-12"
+        summary: "Extends telemetry forget to clear both the recall store and legacy tee logs, honoring configured paths even when capture is disabled. Preserves unrelated files and reports partial cleanup failures."
+      - number: 4538
+        title: Sensitive-output notices in recovery hints
+        status: open
+        submitted_on: "2026-10-12"
+        summary: "Makes clear that recovered output is unfiltered and may contain sensitive data. Preserves existing command/path hints; this is disclosure, not a redaction engine."
+      - number: 4537
+        title: Bounded payload storage and maintenance
+        status: open
+        submitted_on: "2026-10-12"
+        summary: "Adds an aggregate encoded-payload budget plus scoped garbage collection and purge commands. Uses atomic storage accounting and retention, without promising a physical database-size limit or secure erasure."
+      - number: 4536
+        title: Bounded per-filter recall statistics
+        status: open
+        submitted_on: "2026-10-12"
+        summary: "Caps retained per-filter statistics with atomic eviction and migration of oversized stores. Preserves active counters within the bound, while documenting that evicted statistics are not lifetime totals."

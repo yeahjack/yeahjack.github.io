@@ -11,7 +11,7 @@
             <button class="academic-pub__figure preview-figure-trigger" type="button"
               aria-label="Enlarge figure: {{ pub.title | escape }}"
               aria-haspopup="dialog" aria-controls="preview-figure-dialog"
-              data-paper-url="{{ pub.url | escape }}" data-paper-title="{{ pub.title | escape }}"
+              {% if pub.url %}data-paper-url="{{ pub.url | escape }}"{% endif %} data-paper-title="{{ pub.title | escape }}"
               data-preview-image="{{ pub.image | replace: '/images/home/', '/images/home/originals/' }}"
               data-preview-width="{{ figure_size.width }}" data-preview-height="{{ figure_size.height }}">
               <img class="academic-pub__thumbnail" src="{{ pub.image }}" alt="{{ pub.image_alt | escape }}" width="{{ figure_size.width }}" height="{{ figure_size.height }}" loading="lazy" decoding="async">
@@ -21,7 +21,7 @@
             </button>
           </div>
           <div class="academic-pub__content">
-            <h4 class="academic-pub__title"><a href="{{ pub.url }}" rel="noopener noreferrer">{{ pub.title }}</a></h4>
+            <h4 class="academic-pub__title">{% if pub.url %}<a href="{{ pub.url }}" rel="noopener noreferrer">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h4>
             <p class="academic-pub__authors">{{ pub.authors_html }}</p>
             <div class="academic-pub__meta">
               <p class="academic-pub__venue">{{ pub.venue_html }}</p>

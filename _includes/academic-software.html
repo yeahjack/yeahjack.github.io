@@ -1,0 +1,29 @@
+{% for project in site.data.software %}
+  <article class="academic-software">
+    <a class="academic-software__figure" href="{{ project.url }}" rel="noopener noreferrer" aria-label="{{ project.name }} repository">
+      <div class="academic-software__flow" role="img" aria-label="Command output is filtered and compressed by RTK before entering an AI coding agent's context">
+        <span class="academic-software__flow-label">Command output</span>
+        <svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M6 1v11m-4-4 4 4 4-4"/></svg>
+        <strong class="academic-software__wordmark">{{ project.name }}</strong>
+        <span class="academic-software__operation">filter &amp; compress</span>
+        <svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M6 1v11m-4-4 4 4 4-4"/></svg>
+        <span class="academic-software__flow-label">Agent context</span>
+      </div>
+    </a>
+    <div class="academic-software__content">
+      <h3 class="academic-pub__title"><a href="{{ project.url }}" rel="noopener noreferrer">{{ project.title | escape }}</a></h3>
+      {% if project.github_repository %}
+      <div class="academic-software__stats">
+        <a href="{{ project.url }}/stargazers" rel="noopener noreferrer" aria-label="{{ project.name }} stars on GitHub">
+          <img src="https://img.shields.io/github/stars/{{ project.github_repository }}?style=social&amp;label=Stars&amp;cacheSeconds=3600"
+            alt="Stars on GitHub" height="20" decoding="async" referrerpolicy="no-referrer">
+        </a>
+      </div>
+      {% endif %}
+      <p class="academic-software__description">{{ project.description | escape }}</p>
+      <div class="academic-pub__links">
+        {% for link in project.links %}{% assign link_prefix = link.url | slice: 0, 1 %}<a href="{% if link_prefix == '/' %}{{ link.url | relative_url }}{% else %}{{ link.url }}{% endif %}" rel="noopener noreferrer">{{ link.label }}</a>{% endfor %}
+      </div>
+    </div>
+  </article>
+{% endfor %}

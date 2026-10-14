@@ -1,0 +1,59 @@
+---
+layout: academic-home
+title: "RTK Contributions"
+permalink: /rtk-contributions/
+excerpt: "Yijie Xu's contributions to RTK: agent integrations, output fidelity, savings accounting, and recovery storage."
+academic_script: false
+---
+{% assign record = site.data.rtk_contributions %}
+{% assign prs = '' | split: ',' %}
+{% for group in record.groups %}{% assign prs = prs | concat: group.pull_requests %}{% endfor %}
+{% assign merged_prs = prs | where: 'status', 'merged' %}
+{% assign open_prs = prs | where: 'status', 'open' %}
+{% assign closed_prs = prs | where: 'status', 'closed' %}
+<div id="academic-home" class="academic-home--refined academic-contributions">
+  <main>
+    <header class="rtk-intro">
+      <a class="rtk-back" href="{{ '/' | relative_url }}#software-title">Back to homepage</a>
+      <h1>RTK Contributions</h1>
+      <p>I maintain <a href="{{ record.repository }}" rel="noopener noreferrer">RTK</a>, a Rust-based tool that filters and compresses terminal output for AI coding agents. My contributions focus on native agent integration, faithful output, reliable savings accounting, and recoverable storage.</p>
+      <p class="rtk-record-summary">This record covers all <strong>{{ prs | size }}</strong> pull requests I have authored in <a href="{{ record.search_url }}" rel="noopener noreferrer">rtk-ai/rtk</a>, including unmerged work.</p>
+      <dl class="rtk-status-summary" aria-label="Pull request status summary">
+        <div><dt>Merged</dt><dd>{{ merged_prs | size }}</dd></div>
+        <div><dt>Open</dt><dd>{{ open_prs | size }}</dd></div>
+        <div><dt>Closed, not merged</dt><dd>{{ closed_prs | size }}</dd></div>
+      </dl>
+      <p class="rtk-record-note">Status checked on <time datetime="{{ record.checked_on }}">{{ record.checked_on | date: '%B %-d, %Y' }}</time>. Open PRs describe proposed work, not shipped features. Some PRs form a dependency stack, so their diffs should not be added together.</p>
+    </header>
+    <div class="rtk-layout">
+      <nav class="rtk-navigation" aria-label="Contribution categories">
+        {% for group in record.groups %}<a href="#{{ group.id }}">{{ group.title | escape }}<span>{{ group.pull_requests | size }}</span></a>{% endfor %}
+      </nav>
+      <div class="rtk-groups">
+        {% for group in record.groups %}
+        <section class="rtk-group academic-section" aria-labelledby="{{ group.id }}">
+          <div class="academic-section__heading"><h2 id="{{ group.id }}">{{ group.title | escape }}</h2></div>
+          <p class="rtk-group__summary">{{ group.summary | escape }}</p>
+          <ul class="rtk-pr-list">
+            {% for pr in group.pull_requests %}
+            <li class="rtk-pr">
+              <div class="rtk-pr__reference">
+                <a href="{{ record.repository }}/pull/{{ pr.number }}" rel="noopener noreferrer" aria-label="Pull request {{ pr.number }}: {{ pr.title | escape }}">#{{ pr.number }}</a>
+                <span class="rtk-pr__status rtk-pr__status--{{ pr.status }}">{% if pr.status == 'closed' %}Closed, not merged{% else %}{{ pr.status | capitalize }}{% endif %}</span>
+                {% if pr.merged_on %}<time datetime="{{ pr.merged_on }}" title="Merged on {{ pr.merged_on }}">{{ pr.merged_on | date: '%b %-d, %Y' }}</time>{% else %}<time datetime="{{ pr.submitted_on }}" title="Submitted on {{ pr.submitted_on }}">{{ pr.submitted_on | date: '%b %-d, %Y' }}</time>{% endif %}
+              </div>
+              <div class="rtk-pr__content">
+                <h3><a href="{{ record.repository }}/pull/{{ pr.number }}" rel="noopener noreferrer">{{ pr.title | escape }}</a></h3>
+                <p>{{ pr.summary | escape }}</p>
+                {% if pr.note %}<p class="rtk-pr__note">{{ pr.note | escape }}{% if pr.note_url %} <a href="{{ pr.note_url }}" rel="noopener noreferrer">Maintainer's explanation</a>.{% endif %}</p>{% endif %}
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endfor %}
+      </div>
+    </div>
+    <p class="rtk-record-footer">For current review threads and subsequent changes, see <a href="{{ record.search_url }}" rel="noopener noreferrer">all my RTK pull requests on GitHub</a>.</p>
+  </main>
+</div>
