@@ -39,7 +39,7 @@ academic_script: false
             <li class="rtk-pr">
               <div class="rtk-pr__reference">
                 <a href="{{ record.repository }}/pull/{{ pr.number }}" rel="noopener noreferrer" aria-label="Pull request {{ pr.number }}: {{ pr.title | escape }}">#{{ pr.number }}</a>
-                <span class="rtk-pr__status rtk-pr__status--{{ pr.status }}">{% if pr.status == 'closed' %}Closed, not merged{% else %}{{ pr.status | capitalize }}{% endif %}</span>
+                <span class="rtk-pr__status rtk-pr__status--{{ pr.status }}">{% if pr.status == 'closed' %}Closed, not merged{% else %}{{ pr.status | capitalize }}{% if pr.status == 'open' and pr.draft %} (draft){% endif %}{% endif %}</span>
                 {% if pr.merged_on %}<time datetime="{{ pr.merged_on }}" title="Merged on {{ pr.merged_on }}">{{ pr.merged_on | date: '%b %-d, %Y' }}</time>{% else %}<time datetime="{{ pr.submitted_on }}" title="Submitted on {{ pr.submitted_on }}">{{ pr.submitted_on | date: '%b %-d, %Y' }}</time>{% endif %}
               </div>
               <div class="rtk-pr__content">

@@ -42,6 +42,12 @@ groups:
     title: Command output & tool support
     summary: "Reducing redundant output without losing diagnostics, argument boundaries or the behavior developers expect from their tools."
     pull_requests:
+      - number: 4624
+        title: Preserve explicit pnpm list output and depth
+        status: open
+        draft: true
+        submitted_on: "2026-10-17"
+        summary: "Proposes preserving explicit pnpm list JSON and depth requests without injecting conflicting defaults or condensing requested output. Supports negative depths and workspace filters, preserves package-selector boundaries, and adds exact-output and exit-status regression tests."
       - number: 4410
         title: Conservative Angular build compression
         status: open
