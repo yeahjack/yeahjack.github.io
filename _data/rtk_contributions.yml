@@ -1,6 +1,6 @@
 # Full author search and PR states checked against GitHub REST and GraphQL APIs.
 # Each PR belongs to exactly one primary category; stacked diffs are not additive.
-checked_on: "2026-10-17"
+checked_on: "2026-10-20"
 author: yeahjack
 repository: "https://github.com/rtk-ai/rtk"
 search_url: "https://github.com/rtk-ai/rtk/pulls?q=is%3Apr+author%3Ayeahjack"
@@ -28,7 +28,8 @@ groups:
         summary: "Proposes a native WorkBuddy hook with global installation, status and scoped uninstall. Preserves input metadata and leaves permission decisions to WorkBuddy; desktop rewriting was tested, while global discovery remains unverified."
       - number: 4405
         title: Preserve user prose during uninstall
-        status: open
+        status: merged
+        merged_on: "2026-10-18"
         submitted_on: "2026-10-02"
         summary: "Fixes marker pairing and exact RTK reference removal so uninstall does not duplicate or delete unrelated prose. Adds regressions for malformed markers, repeated cleanup and dry runs."
       - number: 4352
@@ -45,7 +46,6 @@ groups:
       - number: 4624
         title: Preserve explicit pnpm list output and depth
         status: open
-        draft: true
         submitted_on: "2026-10-17"
         summary: "Proposes preserving explicit pnpm list JSON and depth requests without injecting conflicting defaults or condensing requested output. Supports negative depths and workspace filters, preserves package-selector boundaries, and adds exact-output and exit-status regression tests."
       - number: 4410
