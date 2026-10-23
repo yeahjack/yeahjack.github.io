@@ -16,14 +16,14 @@ academic_script: false
     <header class="rtk-intro">
       <a class="rtk-back" href="{{ '/' | relative_url }}#software-title">Back to homepage</a>
       <h1>RTK Contributions</h1>
-      <p>I maintain <a href="{{ record.repository }}" rel="noopener noreferrer">RTK</a>, a Rust-based tool that filters and compresses terminal output for AI coding agents. My contributions focus on native agent integration, faithful output, reliable savings accounting, and recoverable storage.</p>
+      <p>I maintain <a href="{{ record.repository }}" rel="noopener noreferrer">RTK</a>, a Rust-based tool that filters and compresses terminal output for AI coding agents. My merged work includes native Codex hooks, shared hook configuration, safer uninstallation, and Angular build-output compression. Ongoing contributions focus on WorkBuddy integration, command-output fidelity, savings accounting, and recoverable storage.</p>
       <p class="rtk-record-summary">This record covers all <strong>{{ prs | size }}</strong> pull requests I have authored in <a href="{{ record.search_url }}" rel="noopener noreferrer">rtk-ai/rtk</a>, including unmerged work.</p>
       <dl class="rtk-status-summary" aria-label="Pull request status summary">
         <div><dt>Merged</dt><dd>{{ merged_prs | size }}</dd></div>
         <div><dt>Open</dt><dd>{{ open_prs | size }}</dd></div>
         <div><dt>Closed, not merged</dt><dd>{{ closed_prs | size }}</dd></div>
       </dl>
-      <p class="rtk-record-note">Status checked on <time datetime="{{ record.checked_on }}">{{ record.checked_on | date: '%B %-d, %Y' }}</time>. Open PRs describe proposed work, not shipped features. Some PRs form a dependency stack, so their diffs should not be added together.</p>
+      <p class="rtk-record-note">Status checked on <time datetime="{{ record.checked_on }}">{{ record.checked_on | date: '%B %-d, %Y' }}</time>. Open PRs describe proposed work, not shipped features. Merged PRs may not yet be included in a release. Some PRs form a dependency stack, so their diffs should not be added together.</p>
     </header>
     <div class="rtk-layout">
       <nav class="rtk-navigation" aria-label="Contribution categories">

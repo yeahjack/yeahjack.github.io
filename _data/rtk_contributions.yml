@@ -1,6 +1,6 @@
 # Full author search and PR states checked against GitHub REST and GraphQL APIs.
 # Each PR belongs to exactly one primary category; stacked diffs are not additive.
-checked_on: "2026-10-14"
+checked_on: "2026-10-23"
 author: yeahjack
 repository: "https://github.com/rtk-ai/rtk"
 search_url: "https://github.com/rtk-ai/rtk/pulls?q=is%3Apr+author%3Ayeahjack"
@@ -21,16 +21,17 @@ groups:
         submitted_on: "2026-09-20"
         merged_on: "2026-09-24"
         summary: "Consolidated hook configuration I/O across agents, preserved unrelated user hooks during removal, and retained extra tool-input fields in VS Code/Copilot rewrites."
+      - number: 4405
+        title: Preserve user prose during uninstall
+        status: merged
+        submitted_on: "2026-10-02"
+        merged_on: "2026-10-18"
+        summary: "Fixed marker pairing and exact RTK reference removal so uninstall does not duplicate or delete unrelated prose. Added regressions for malformed markers, repeated cleanup and dry runs."
       - number: 4236
         title: WorkBuddy integration
         status: open
         submitted_on: "2026-09-25"
         summary: "Proposes a native WorkBuddy hook with global installation, status and scoped uninstall. Preserves input metadata and leaves permission decisions to WorkBuddy; desktop rewriting was tested, while global discovery remains unverified."
-      - number: 4405
-        title: Preserve user prose during uninstall
-        status: open
-        submitted_on: "2026-10-02"
-        summary: "Fixes marker pairing and exact RTK reference removal so uninstall does not duplicate or delete unrelated prose. Adds regressions for malformed markers, repeated cleanup and dry runs."
       - number: 4352
         title: Mixed legacy/native Codex hook migration
         status: closed
@@ -44,9 +45,15 @@ groups:
     pull_requests:
       - number: 4410
         title: Conservative Angular build compression
-        status: open
+        status: merged
         submitted_on: "2026-10-02"
-        summary: "Adds native ng build support that compacts recognized build tables while preserving chunk information, diagnostics and exit status. Unknown output and explicit help, verbose or watch modes pass through unchanged."
+        merged_on: "2026-10-23"
+        summary: "Added native ng build support that compacts recognized build tables while preserving chunk information, diagnostics and exit status. Unknown output and explicit help, verbose or watch modes pass through unchanged."
+      - number: 4624
+        title: Preserve explicit pnpm list output options
+        status: open
+        submitted_on: "2026-10-17"
+        summary: "Preserves explicit pnpm list JSON and depth requests, including negative depths, workspace filters and package-selector boundaries. Avoids injecting conflicting defaults or condensing requested output, while retaining normal compact listings when no explicit format or depth is requested."
       - number: 4454
         title: Preserve Cargo test listings
         status: open
