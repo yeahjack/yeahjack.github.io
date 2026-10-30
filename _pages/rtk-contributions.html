@@ -11,18 +11,20 @@ academic_script: false
 {% assign merged_prs = prs | where: 'status', 'merged' %}
 {% assign open_prs = prs | where: 'status', 'open' %}
 {% assign closed_prs = prs | where: 'status', 'closed' %}
+{% assign draft_prs = open_prs | where: 'draft', true %}
 <div id="academic-home" class="academic-home--refined academic-contributions">
   <main>
     <header class="rtk-intro">
       <a class="rtk-back" href="{{ '/' | relative_url }}#software-title">Back to homepage</a>
       <h1>RTK Contributions</h1>
-      <p>I maintain <a href="{{ record.repository }}" rel="noopener noreferrer">RTK</a>, a Rust-based tool that filters and compresses terminal output for AI coding agents. My merged work includes native Codex hooks, shared hook configuration, safer uninstallation, and Angular build-output compression. Ongoing contributions focus on WorkBuddy integration, command-output fidelity, savings accounting, and recoverable storage.</p>
-      <p class="rtk-record-summary">This record covers all <strong>{{ prs | size }}</strong> pull requests I have authored in <a href="{{ record.search_url }}" rel="noopener noreferrer">rtk-ai/rtk</a>, including unmerged work.</p>
+      <p>I maintain <a href="{{ record.repository }}" rel="noopener noreferrer">RTK</a>, a Rust-based tool that filters and compresses terminal output for AI coding agents. My merged work covers native Codex hooks, shared hook configuration, safer uninstallation, Angular build-output compression, and weekly usage analytics. Ongoing contributions focus on agent integration, faithful command output, savings accounting, and recoverable storage.</p>
+      <p class="rtk-record-summary">This record covers all <strong>{{ prs | size }}</strong> pull requests I have authored in <a href="{{ record.search_url }}" rel="noopener noreferrer">rtk-ai/rtk</a>, including unmerged work and {{ draft_prs | size }} open drafts.</p>
       <dl class="rtk-status-summary" aria-label="Pull request status summary">
         <div><dt>Merged</dt><dd>{{ merged_prs | size }}</dd></div>
         <div><dt>Open</dt><dd>{{ open_prs | size }}</dd></div>
         <div><dt>Closed, not merged</dt><dd>{{ closed_prs | size }}</dd></div>
       </dl>
+      <p class="rtk-record-note">Angular build support, safer uninstallation, and weekly analytics fixes are included in <a href="{{ record.latest_release.url }}" rel="noopener noreferrer">{{ record.latest_release.tag }}</a>.</p>
       <p class="rtk-record-note">Status checked on <time datetime="{{ record.checked_on }}">{{ record.checked_on | date: '%B %-d, %Y' }}</time>. Open PRs describe proposed work, not shipped features. Merged PRs may not yet be included in a release. Some PRs form a dependency stack, so their diffs should not be added together.</p>
     </header>
     <div class="rtk-layout">
@@ -31,11 +33,14 @@ academic_script: false
       </nav>
       <div class="rtk-groups">
         {% for group in record.groups %}
+        {% assign group_merged = group.pull_requests | where: 'status', 'merged' | sort: 'merged_on' | reverse %}
+        {% assign group_unmerged = group.pull_requests | where_exp: 'pr', "pr.status != 'merged'" | sort: 'submitted_on' | reverse %}
+        {% assign ordered_prs = group_merged | concat: group_unmerged %}
         <section class="rtk-group academic-section" aria-labelledby="{{ group.id }}">
           <div class="academic-section__heading"><h2 id="{{ group.id }}">{{ group.title | escape }}</h2></div>
           <p class="rtk-group__summary">{{ group.summary | escape }}</p>
           <ul class="rtk-pr-list">
-            {% for pr in group.pull_requests %}
+            {% for pr in ordered_prs %}
             <li class="rtk-pr">
               <div class="rtk-pr__reference">
                 <a href="{{ record.repository }}/pull/{{ pr.number }}" rel="noopener noreferrer" aria-label="Pull request {{ pr.number }}: {{ pr.title | escape }}">#{{ pr.number }}</a>
@@ -45,6 +50,9 @@ academic_script: false
               <div class="rtk-pr__content">
                 <h3><a href="{{ record.repository }}/pull/{{ pr.number }}" rel="noopener noreferrer">{{ pr.title | escape }}</a></h3>
                 <p>{{ pr.summary | escape }}</p>
+                <p class="rtk-pr__note">
+                  <a href="{{ record.repository }}/pull/{{ pr.number }}/commits" rel="noopener noreferrer">Commit history</a>{% if pr.merge_commit %}; <a href="{{ record.repository }}/commit/{{ pr.merge_commit }}" rel="noopener noreferrer">merge commit</a>{% endif %}{% if pr.released_in %}; included in <a href="{{ record.repository }}/releases/tag/{{ pr.released_in }}" rel="noopener noreferrer">{{ pr.released_in }}</a>{% endif %}.
+                </p>
                 {% if pr.note %}<p class="rtk-pr__note">{{ pr.note | escape }}{% if pr.note_url %} <a href="{{ pr.note_url }}" rel="noopener noreferrer">Maintainer's explanation</a>.{% endif %}</p>{% endif %}
               </div>
             </li>
@@ -54,6 +62,6 @@ academic_script: false
         {% endfor %}
       </div>
     </div>
-    <p class="rtk-record-footer">For current review threads and subsequent changes, see <a href="{{ record.search_url }}" rel="noopener noreferrer">all my RTK pull requests on GitHub</a>.</p>
+    <p class="rtk-record-footer">Audit scope: all authored PR commit histories and <a href="{{ record.commit_audit.history_url }}" rel="noopener noreferrer">{{ record.commit_audit.authored_commits }} authored commits reachable from {{ record.commit_audit.branch }}</a> ({{ record.commit_audit.single_parent_commits }} single-parent commits and {{ record.commit_audit.merge_commits }} merge commits). These records overlap with PR histories and are not independent feature counts; synchronization and integration work is grouped with its source PR. For current review threads and subsequent changes, see <a href="{{ record.search_url }}" rel="noopener noreferrer">all my RTK pull requests on GitHub</a>.</p>
   </main>
 </div>
