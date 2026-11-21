@@ -125,11 +125,11 @@ groups:
         released_in: v1.1.0
         summary: "Aligned RTK and ccusage reports on Monday week boundaries and summed duplicate project-week rows. A follow-up safely falls back to RTK-only weekly data when legacy ccusage ignores the week-start request, preserving the daily and monthly report sections."
       - number: 4541
-        title: Invocation tracking and recovery-output accounting
+        title: Recall output accounting and export
         status: open
         note: "Review status: changes requested."
         submitted_on: "2026-10-12T20:34:59Z"
-        summary: "Links supported native Claude hook rewrites to command invocations and measures bytes emitted by actual recall reads. Exports signed net output savings with explicit coverage limits, rather than claiming complete context or billing measurements."
+        summary: "Records stdout bytes and estimated tokens emitted by actual recall reads, including repeated reads. Exports measured output and coverage in gain history JSON without claiming combined net savings or billing totals."
       - number: 4436
         title: Signed net savings across reports
         status: open
@@ -159,7 +159,7 @@ groups:
         title: Immutable capture references
         status: open
         submitted_on: "2026-10-12T20:38:13Z"
-        summary: "Separates capture identity from deduplicated payloads so repeated output cannot change an earlier hint's offset, metadata or retained bytes. Expired references fail clearly rather than returning another run's output."
+        summary: "Introduces capture IDs and immutable references in one migration. Separates each capture from deduplicated payloads so repeated output cannot change an earlier hint's offset, metadata or retained bytes. Expired references fail clearly rather than returning another run's output."
       - number: 4540
         title: Batched search-recovery writes
         status: open
