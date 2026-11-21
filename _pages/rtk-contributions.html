@@ -17,14 +17,14 @@ academic_script: false
     <header class="rtk-intro">
       <a class="rtk-back" href="{{ '/' | relative_url }}#software-title">Back to homepage</a>
       <h1>RTK Contributions</h1>
-      <p>I maintain <a href="{{ record.repository }}" rel="noopener noreferrer">RTK</a>, a Rust-based tool that filters and compresses terminal output for AI coding agents. My merged work covers native Codex hooks, shared hook configuration, safer uninstallation, Angular build-output compression, and weekly usage analytics. Ongoing contributions focus on agent integration, faithful command output, savings accounting, and recoverable storage.</p>
+      <p>I maintain <a href="{{ record.repository }}" rel="noopener noreferrer">RTK</a>, a Rust-based tool that filters and compresses terminal output for AI coding agents. My merged work covers native Codex hooks, shared hook configuration, safer uninstallation, Angular build-output compression, lossless fallback for piped Go test output, and weekly usage analytics. Ongoing contributions focus on agent integration, faithful command output, savings accounting, and recoverable storage.</p>
       <p class="rtk-record-summary">This record covers all <strong>{{ prs | size }}</strong> pull requests I have authored in <a href="{{ record.search_url }}" rel="noopener noreferrer">rtk-ai/rtk</a>, including unmerged work and {{ draft_prs | size }} open drafts.</p>
       <dl class="rtk-status-summary" aria-label="Pull request status summary">
         <div><dt>Merged</dt><dd>{{ merged_prs | size }}</dd></div>
         <div><dt>Open</dt><dd>{{ open_prs | size }}</dd></div>
         <div><dt>Closed, not merged</dt><dd>{{ closed_prs | size }}</dd></div>
       </dl>
-      <p class="rtk-record-note">Angular build support, safer uninstallation, and weekly analytics fixes are included in <a href="{{ record.latest_release.url }}" rel="noopener noreferrer">{{ record.latest_release.tag }}</a>.</p>
+      <p class="rtk-record-note">Angular build support, safer uninstallation, weekly analytics fixes, and the Go test pipe fallback are included in <a href="{{ record.latest_release.url }}" rel="noopener noreferrer">{{ record.latest_release.tag }}</a>.</p>
       <p class="rtk-record-note">Status checked on <time datetime="{{ record.checked_on }}">{{ record.checked_on | date: '%B %-d, %Y' }}</time>. Open PRs describe proposed work, not shipped features. Merged PRs may not yet be included in a release. Some PRs form a dependency stack, so their diffs should not be added together.</p>
     </header>
     <div class="rtk-layout">
@@ -62,6 +62,6 @@ academic_script: false
         {% endfor %}
       </div>
     </div>
-    <p class="rtk-record-footer">Audit scope: all authored PR commit histories and <a href="{{ record.commit_audit.history_url }}" rel="noopener noreferrer">{{ record.commit_audit.authored_commits }} authored commits reachable from {{ record.commit_audit.branch }}</a> ({{ record.commit_audit.single_parent_commits }} single-parent commits and {{ record.commit_audit.merge_commits }} merge commits). These records overlap with PR histories and are not independent feature counts; synchronization and integration work is grouped with its source PR. For current review threads and subsequent changes, see <a href="{{ record.search_url }}" rel="noopener noreferrer">all my RTK pull requests on GitHub</a>.</p>
+    <p class="rtk-record-footer">Audit scope: all authored PR statuses and an inventory of <a href="{{ record.commit_audit.history_url }}" rel="noopener noreferrer">{{ record.commit_audit.authored_commits }} authored commits reachable from {{ record.commit_audit.branch }}</a> ({{ record.commit_audit.single_parent_commits }} single-parent commits and {{ record.commit_audit.merge_commits }} merge commits). These records overlap with PR histories and are not independent feature counts; synchronization and integration work is grouped with its source PR. For current review threads and subsequent changes, see <a href="{{ record.search_url }}" rel="noopener noreferrer">all my RTK pull requests on GitHub</a>.</p>
   </main>
 </div>

@@ -1,24 +1,30 @@
 # Full author search and PR states checked against GitHub REST and GraphQL APIs.
 # Each PR belongs to exactly one primary category; stacked diffs are not additive.
 # Event timestamps are ISO 8601 UTC so same-day entries also sort chronologically.
-checked_on: "2026-10-29"
+checked_on: "2026-11-21"
 author: yeahjack
 repository: "https://github.com/rtk-ai/rtk"
 search_url: "https://github.com/rtk-ai/rtk/pulls?q=is%3Apr+author%3Ayeahjack"
 commit_audit:
   branch: develop
-  authored_commits: 40
-  single_parent_commits: 14
-  merge_commits: 26
+  authored_commits: 59
+  single_parent_commits: 17
+  merge_commits: 42
   history_url: "https://github.com/rtk-ai/rtk/commits/develop/?author=yeahjack"
 latest_release:
-  tag: v1.1.0
-  url: "https://github.com/rtk-ai/rtk/releases/tag/v1.1.0"
+  tag: v1.2.1
+  url: "https://github.com/rtk-ai/rtk/releases/tag/v1.2.1"
 groups:
   - id: agent-integrations
     title: Agent integrations & configuration
     summary: "Bringing RTK into coding agents through native hooks, with careful handling of user configuration and host permissions."
     pull_requests:
+      - number: 5163
+        title: Match attached trailing wildcards in permission rules
+        status: open
+        draft: true
+        submitted_on: "2026-11-18T13:07:28Z"
+        summary: "Fixes matching for attached trailing wildcards such as curl -d @*, while preserving word-boundary forms. Adds permission and hook-protocol regressions for deny/ask precedence, wrapper handling and neighboring nonmatches. This draft does not claim complete parity with the host permission system."
       - number: 3552
         title: Native Codex command rewriting
         status: merged
@@ -63,6 +69,18 @@ groups:
     title: Command output & tool support
     summary: "Reducing redundant output without losing diagnostics, argument boundaries or the behavior developers expect from their tools."
     pull_requests:
+      - number: 5165
+        title: Skip execution-denied Windows PATH candidates
+        status: open
+        draft: true
+        submitted_on: "2026-11-18T13:37:19Z"
+        summary: "Allows bare command lookup to continue past an execution-denied PATH candidate, preserving explicit paths and ordinary errors. Validated with native Windows ACL tests and an officially installed Hermes MSIX package; the reporter's exact Store version and full desktop-chat chain remain unverified."
+      - number: 5164
+        title: Preserve baseline x86-64 CPU compatibility
+        status: open
+        draft: true
+        submitted_on: "2026-11-18T13:14:44Z"
+        summary: "Pins C compilation to the baseline x86-64 instruction set for musl release artifacts and adds QEMU smoke tests for CPUs without AVX or AVX2. Reproduces the official v1.2.0 startup failure and checks patched builds without disabling runtime-dispatched SIMD."
       - number: 4624
         title: Preserve explicit pnpm list output and depth
         status: open
@@ -83,9 +101,12 @@ groups:
         summary: "Passes cargo test -- --list through intact, including stdout, stderr and exit status. Handles Cargo/libtest argument boundaries without changing ordinary test-result compression."
       - number: 4455
         title: Lossless fallback for piped Go test output
-        status: open
+        status: merged
         submitted_on: "2026-10-05T14:10:34Z"
-        summary: "Summarizes recognized Go test events even in mixed event/log streams and package-less test2json output. Preserves unrelated records and unmatched build diagnostics, keeps unsupported input unchanged, and leaves the runner's reducer unchanged. It does not infer the upstream command's exit status."
+        merged_on: "2026-11-02T21:40:56Z"
+        merge_commit: "2087fe5d27746918927ab721da0ee4067905b8de"
+        released_in: v1.2.1
+        summary: "Recognizes supported event-only Go test JSON before filtering. Preserves plain text, mixed text/JSON, unsupported records and package-less test2json output in full. Keeps the existing Go renderer unchanged and does not infer the upstream command's exit status."
       - number: 4456
         title: End-to-end Vitest and Jest routing tests
         status: open
@@ -106,6 +127,7 @@ groups:
       - number: 4541
         title: Invocation tracking and recovery-output accounting
         status: open
+        note: "Review status: changes requested."
         submitted_on: "2026-10-12T20:34:59Z"
         summary: "Links supported native Claude hook rewrites to command invocations and measures bytes emitted by actual recall reads. Exports signed net output savings with explicit coverage limits, rather than claiming complete context or billing measurements."
       - number: 4436
