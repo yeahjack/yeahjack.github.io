@@ -187,3 +187,12 @@ groups:
         status: open
         submitted_on: "2026-10-12T20:22:31Z"
         summary: "Caps retained per-filter statistics with atomic eviction and migration of oversized stores. Preserves active counters within the bound, while documenting that evicted statistics are not lifetime totals."
+  - id: build-maintenance
+    title: Build & dependency maintenance
+    summary: "Keeping dependency lockfiles consistent so builds can be reproduced."
+    pull_requests:
+      - number: 5296
+        title: Restore locked proxy builds after the TOML upgrade
+        status: open
+        submitted_on: "2026-11-25T12:29:40Z"
+        summary: "Refreshes the proxy lockfile after the engine's TOML dependency upgrade, restoring locked Cargo dependency resolution without changing the manifests or runtime code."
