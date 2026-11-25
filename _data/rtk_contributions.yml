@@ -1,15 +1,15 @@
 # Full author search and PR states checked against GitHub REST and GraphQL APIs.
 # Each PR belongs to exactly one primary category; stacked diffs are not additive.
 # Event timestamps are ISO 8601 UTC so same-day entries also sort chronologically.
-checked_on: "2026-11-21"
+checked_on: "2026-11-25"
 author: yeahjack
 repository: "https://github.com/rtk-ai/rtk"
 search_url: "https://github.com/rtk-ai/rtk/pulls?q=is%3Apr+author%3Ayeahjack"
 commit_audit:
   branch: develop
-  authored_commits: 59
-  single_parent_commits: 17
-  merge_commits: 42
+  authored_commits: 84
+  single_parent_commits: 25
+  merge_commits: 59
   history_url: "https://github.com/rtk-ai/rtk/commits/develop/?author=yeahjack"
 latest_release:
   tag: v1.2.1
@@ -126,9 +126,10 @@ groups:
         summary: "Aligned RTK and ccusage reports on Monday week boundaries and summed duplicate project-week rows. A follow-up safely falls back to RTK-only weekly data when legacy ccusage ignores the week-start request, preserving the daily and monthly report sections."
       - number: 4541
         title: Recall output accounting and export
-        status: open
-        note: "Review status: changes requested."
+        status: merged
         submitted_on: "2026-10-12T20:34:59Z"
+        merged_on: "2026-11-25T02:24:30Z"
+        merge_commit: "97e68d5358aa5d91d1540ea64df58c9688bcf83d"
         summary: "Records stdout bytes and estimated tokens emitted by actual recall reads, including repeated reads. Exports measured output and coverage in gain history JSON without claiming combined net savings or billing totals."
       - number: 4436
         title: Signed net savings across reports
